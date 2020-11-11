@@ -1,0 +1,70 @@
+---
+layout: default
+---
+
+<!-- Section: inner-header -->
+    <section class="inner-header divider parallax layer-overlay overlay-dark-8" data-bg-img="/assets/img/about.jpg">
+    <div class="container pt-60 pb-60">
+      <!-- Section Content -->
+      <div class="section-content">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="title text-white">{{ page.title }}</h2>
+            <ol class="breadcrumb text-center text-black mt-10">
+              <li><a href="#">Home</a></li>
+              <li class="active text-theme-colored">{{ page.title }}</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Section: Causes -->
+    <section>
+      <div class="container pb-sm-30">
+        <!--<div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h2 class="mt-0 line-height-1 text-uppercase font-28">Latest <span class="text-theme-colored font-weight-400">Causes</span> <span class="font-30 text-theme-colored"></span></h2>
+              <p class="lead">We are charity/ non-profit/ fundraising/ NGO organizations. Our charity activities are taken place around the 
+              world,let contribute to them with us by your hand to be a better life</p>
+            </div>
+          </div>
+        </div>-->
+        <div class="section-content">
+          <div class="row mtli-row-clearfix">
+          	{% for indicator in site.indicators %}
+            <div class="col-sm-6 col-md-6 col-lg-6 wow fadeInUp pb-30" data-wow-duration="1.5s" data-wow-offset="10">
+              <div class="causes bg-lighter maxwidth500 mb-sm-30">
+                <div class="thumb layer-overlay overlay-dark-7">
+                  <img class="img-fullwidth " alt="{{ indicator.title }}" src="{{ indicator.image }}" style="width: 360px; height: 270px;">
+                  <div class="donate-piechart piechart-absolute">
+                    <div class="piechart-block">
+                      <div class="piechart" data-barcolor="#ccc" data-trackcolor="#fff" data-percent="{{ indicator.percentage }}" data-linewidth="8">
+                        <span class="percent text-white font-weight-700">0 </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="causes-details clearfix border-bottom p-15 pt-10"/>
+                  <h3 class="text-uppercase"><a href="#" class="text-theme-colored">{{ indicator.title }}</a></h3>
+                  <p style="height: 50px;">{{ indicator.subtitle }}</p>
+                  <ul class="list-inline clearfix mt-20">
+                    <li class="pull-left flip pr-0">Completed: <span class="font-weight-700">{{ indicator.result }} {{ indicator.unit }}</span></li>
+                    <li class="text-theme-colored pull-right flip pr-0">Goal: <span class="font-weight-700">{{ indicator.goal }} {{ indicator.unit }}</span></li>
+                  </ul>
+                  <div class="mt-10 clearfix">
+                   <a href="https://www.shelter.org/donate" target="blank" class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="#">Donate Now</a>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </section>

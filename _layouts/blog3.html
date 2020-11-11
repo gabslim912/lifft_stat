@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<!-- Start main-content -->
+<div class="main-content">
+    <!-- Section: inner-header -->
+    <section class="inner-header divider parallax layer-overlay overlay-dark-8" data-bg-img="/assets/img/blog.jpg">
+    <div class="container pt-60 pb-60">
+      <!-- Section Content -->
+      <div class="section-content">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="title text-white">{{ page.title }}</h2>
+            <ol class="breadcrumb text-center text-black mt-10">
+              <li><a href="#">Home</a></li>
+              <li class="active text-theme-colored">{{ page.title }}</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+      <div class="container pt-100 pb-100">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="vertical-masonry-timeline-wrapper">
+              <ul class="vertical-masonry-timeline">
+                {% for post in site.posts %}
+                <li class="each-masonry-item wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="10">
+                    <div class="timeline-block">
+                      <span class="timeline-post-format"><i class="fa fa-newspaper-o"></i></span>
+
+                      <article class="post clearfix">
+                        <div class="entry-header">
+                          <div class="post-thumb"> <img alt="{{ post.title }}" src="{{ post.image }}" class="img-fullwidth img-responsive"> </div>
+
+                          <div class="entry-meta meta-absolute text-center p-15">
+                            <div class="display-table">
+                              <div class="display-table-cell">
+                                <ul>
+                                  <li><a href="">{{ post.publication_date | date: '%b' }}</a></li>
+                                  <li><a href="">{{ post.publication_date | date: '%d' }}</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="{{ post.url }}"><h2 class="entry-title text-uppercase m-0 mt-5">{{ post.title }}</h2></a>
+                          
+                          <a href="{{ post.url }}" class="btn-read-more">Read more</a>
+                        
+                      </article>
+                    </div>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
