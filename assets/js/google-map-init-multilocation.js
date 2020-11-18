@@ -24,9 +24,9 @@ function initialize() {
 
     // Multiple Pointers with Different Colors
     var mapPointers = [
-        ['/assets/images/map-marker.png'],
         ['/assets/images/map-marker2.png'],
-        ['/assets/images/map-marker3.png']
+        ['/assets/images/map-marker2.png'],
+        ['/assets/images/map-marker2.png']
     ];
 
 

@@ -1,0 +1,87 @@
+<header id="header" class="header">
+    <div class="header-nav">
+      <div class="header-nav navbar-fixed-top header-dark  navbar-transparent navbar-sticky-animated animated-active">
+        <div class="container-fluid">
+          <nav id="menuzord-right" class="menuzord default"><a class="pull-left flip xs-pull-left mt-15" href="/" ><img src="{{ site.logo_white2 }}" alt="{{ site.title }}" width="150px"></a>
+            <ul class="menuzord-menu" style="margin-left: 60px;">
+              <li class=""><a href="/" style="font-weight: bold; text-transform: uppercase;">Home</a>
+                
+              </li>
+              <li><a href="/about.html" style="font-weight: bold; text-transform: uppercase;">What we do</a>
+                <ul class="dropdown">
+                  <li><a href="/about.html">About Us</a></li>
+                  <li><a href="/donors.html">Donors & Partners</a></li>
+                  <li><a href="/faq.html">Have questions?</a></li>
+                </ul>
+              </li>
+              
+              <!--<li><a href="/our_work.html">Our Work</a>
+                <ul class="dropdown">
+                  <li><a href="#">Our Approach</a></li>
+                  <li><a href="#">Our Intervention Area</a></li>
+                  
+                </ul>
+              </li>-->
+              <li><a href="javascript:void(0)" style="font-weight: bold; text-transform: uppercase;">Our impact</a>
+                <ul class="dropdown">
+                  <li><a href="/indicators.html">Project results</a></li>
+                  <li><a href="/stories.html">Success stories</a></li>
+                </ul>
+              </li>
+              <li><a href="javascript:void(0)" style="font-weight: bold; text-transform: uppercase;">News and Events</a>
+                <div class="megamenu">
+                  <div class="megamenu-row">
+                    <div class="col3">
+                      <ul class="list-unstyled list-dashed">
+                        
+                        <li><a href="/blog.html"><h3>Latest News</h3></a></li>
+                        <li><a href="/events.html"><h3>Events</h3></a></li>
+                        <li><a href="/press.html"><h3>Press releases</h3></a></li>
+                        <li><a href="/publications.html"><h3>Publications</h3></a></li>
+                        
+                      </ul>
+                    </div>
+                    <div class="col5">
+                      <h3 class="">Next Event:</h3>
+                      <article class="post clearfix">
+                        <div>
+                          {% assign last_event = site.events | last %}
+                          <div class="post-thumb"><a href="{{ last_event.url }}"> <img class="img-responsive" src="{{ last_event.image }}" alt="" style="width: 75%; height: auto; margin-bottom: 12px;"> </a></div>
+                          <h4 class="entry-title"><a href="{{ last_event.url }}">{{ last_event.title }}</a></h4>
+                        </div>
+                       
+                      </article>
+                    </div>
+                    
+                    <div class="col4">
+                      <h3 class="mb-30">Latest News:</h3>
+                      <div class="list-dashed">
+                        {% for post in site.posts %}
+                        <article class="post media-post clearfix pb-0 mb-10"> <a href="{{ post.url }}" class="post-thumb"><img alt="" src="{{ post.image }}" style="width: 50px; height: 50px;"></a>
+                          <div class="post-right">
+                            <h4 class="post-title mt-0 text-justify"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                          </div>
+                        </article>
+                        {% endfor %}
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </li>
+              <li><a href="javascript:void(0)" style="font-weight: bold; text-transform: uppercase;">Get Involved</a>
+                <ul class="dropdown">
+                  <li><a href="/contact.html"><span>Contact us</span></a></li>
+                  <li><a href="/join_us.html"><span>Join our team</span></a></li>
+                  <li><a href="/volunteer.html"><span>Become a volunteer</span></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://www.shelter.org/donate" target="blank" class="btn btn-grey btn-transparent btn-theme-colored btn-flat hvr-pulse" style="font-weight: bold; text-transform: uppercase;">Donate Now <i class="fa fa-arrow-circle-right"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>

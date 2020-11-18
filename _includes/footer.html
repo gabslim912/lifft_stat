@@ -64,6 +64,48 @@
   </div>
   <!-- end main-content -->
 <footer id="footer" class=" divider parallax layer-overlay overlay-dark-9" data-bg-img="/assets/img/cashew_141.jpg" data-parallax-ratio="0.1">
+   <div class="container pt-40 pb-40">
+    <div class="row">
+      <div class="col-md-5">
+        <h2 class="mt-5">Subscribe to our newsletter to connect with us</h2>
+        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum officiis, odit harum!</p>-->
+      </div>
+      <div class="col-md-6 col-md-offset-1">
+        
+        <!-- Mailchimp Subscription Form-->
+        <form id="mailchimp-subscription-form9" class="newsletter-form mt-30">
+          <div class="input-group">
+            <input type="email" id="mce-EMAIL" data-height="45px" class="form-control input-lg" placeholder="Your Email" name="EMAIL" value="">
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-colored btn-theme-colored btn-lg m-0" data-height="45px">Subscribe</button>
+            </span>
+          </div>
+        </form>             
+
+        <!-- Mailchimp Subscription Form Validation-->
+        <script type="text/javascript">
+          $('#mailchimp-subscription-form9').ajaxChimp({
+              callback: mailChimpCallBack,
+              url: '//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;id=49d6d30e1e'
+          });
+
+          function mailChimpCallBack(resp) {
+              // Hide any previous response text
+              var $mailchimpform = $('#mailchimp-subscription-form9'),
+                  $response = '';
+              $mailchimpform.children(".alert").remove();
+              if (resp.result === 'success') {
+                  $response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+              } else if (resp.result === 'error') {
+                  $response = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+              }
+              $mailchimpform.prepend($response);
+          }
+        </script>
+        
+      </div>
+    </div> 
+  </div>
   <div class="container pt-70 pb-40">
     <div class="row">
       <div class="col-md-6 col-md-offset-3 text-center">
