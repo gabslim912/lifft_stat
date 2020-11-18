@@ -1,20 +1,11 @@
 ---
 layout: default
 ---
-<section class="inner-header divider parallax layer-overlay overlay-dark-7" data-bg-img="{{ page.image }}">
-    <div class="container pt-150 pb-50">
-      <!-- Section Content -->
-      <div class="section-content">
-        <div class="row"> 
-          <div class="col-sm-8 text-left flip xs-text-center">
-            <h1 class="title" style="color: #FFF;font-weight: bolder;">{{ page.title }}</h1>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </section>
-	<!-- Section: Causes -->
+<!-- Start main-content -->
+<div class="main-content">
+    <!-- Section: inner-header -->
+    {% include page_title.html %}
+    <!-- Section: Causes -->
     <section>
       <div class="container pb-sm-30">
         <!--<div class="section-title text-center">
@@ -30,8 +21,8 @@ layout: default
           	{% for story in site.stories %}
             <div class="col-sm-6 col-md-6 col-lg-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="10" style="padding-bottom: 30px;">
               <div class="causes bg-lighter maxwidth500 mb-sm-30">
-                <div class="thumb">
-                  <img class="img-fullwidth" alt="{{ story.title }}" src="{{ story.image }}" style="width: 555px; height: 476px;">
+                <div class="">
+                  <img class="img-fullwidth img-responsive" alt="{{ story.title }}" src="{{ story.image }}" >
                 </div>
                 <!--<div class="progress-item mt-0">
                   <div class="progress mb-0">
@@ -49,7 +40,7 @@ layout: default
                 </div>
               </div>
             </div>
-			{% endfor %}
+    	{% endfor %}
            
           </div>
         </div>
