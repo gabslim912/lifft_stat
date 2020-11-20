@@ -4,28 +4,29 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: text
   name: subtitle
-  label: subtitle
+  label: Subtitle
 - type: number
   name: result
-  label: result
+  label: Result
 - type: number
   name: goal
-  label: goal
+  label: Goal
 - type: text
   name: category
-  label: category
+  label: Category
 - type: text
   name: unit
-  label: unit
+  label: Unit
 - type: file
   name: image
-  label: image
+  label: Image
 - type: number
   name: percentage
-  label: percentage
+  label: Percentage
