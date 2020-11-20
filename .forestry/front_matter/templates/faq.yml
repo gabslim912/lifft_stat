@@ -4,16 +4,27 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: textarea
   name: answer
-  label: answer
+  label: Answer
 - type: number
   name: number
-  label: number
-- type: text
-  name: class
-  label: class
-- type: text
-  name: expanded
-  label: expanded
+  label: Number
+- name: class
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - active
+    - collapsed
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Class
+- name: expanded
+  type: boolean
+  label: Expanded
