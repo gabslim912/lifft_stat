@@ -18,3 +18,5 @@ fields:
 - type: file
   name: parallax_image
   label: parallax_image
+pages:
+- stories.md
