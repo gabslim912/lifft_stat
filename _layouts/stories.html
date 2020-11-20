@@ -5,17 +5,17 @@ layout: default
 <div class="main-content">
     <!-- Section: inner-header -->
     {% include page_title.html %}
-    <!-- Section: Causes -->
+    <!-- Section: Causes 
     <section>
       <div class="container pb-sm-30">
-        <!--<div class="section-title text-center">
+        <div class="section-title text-center">
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
               <h2 class="mt-0 line-height-1 text-uppercase font-28">Success <span class="text-theme-colored font-weight-400">STORIES</span> <span class="font-30 text-theme-colored"></span></h2>
               <p class="lead">{{ page.description }}</p>
             </div>
           </div>
-        </div>-->
+        </div>
         <div class="section-content">
           <div class="row mtli-row-clearfix">
           	{% for story in site.stories %}
@@ -24,11 +24,11 @@ layout: default
                 <div class="">
                   <a href="{{ story.url }}"><img class="img-fullwidth img-responsive" alt="{{ story.title }}" src="{{ story.image }}" ></a>
                 </div>
-                <!--<div class="progress-item mt-0">
+              <div class="progress-item mt-0">
                   <div class="progress mb-0">
                     <div class="progress-bar" data-percent="84"></div>
                   </div>
-                </div>-->
+                </div>-
                 <div class="causes-details clearfix border-bottom p-15 pt-10">
                   <h2><a href="{{ story.url }}">{{ story.title }}</a></h2>
                   <p>{{ story.subtitle }}</p>
@@ -45,4 +45,43 @@ layout: default
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
+     <section>
+      <div class="container pt-100 pb-100">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="vertical-masonry-timeline-wrapper">
+              <ul class="vertical-masonry-timeline">
+                {% for story in site.stories %}
+                <li class="each-masonry-item wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="10">
+                    <div class="timeline-block">
+                      <span class="timeline-post-format"><i class="fa fa-newspaper-o"></i></span>
+
+                      <article class="post clearfix">
+                        <div class="entry-header">
+                          <div class="post-thumb"> <img alt="{{ story.title }}" src="{{ story.image }}" class="img-fullwidth img-responsive"> </div>
+
+                          <div class="entry-meta meta-absolute text-center p-15">
+                            <div class="display-table">
+                              <div class="display-table-cell">
+                                <ul>
+                                  <li><a href="">{{ story.date | date: '%b' }}</a></li>
+                                  <li><a href="">{{ story.date | date: '%d' }}</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="{{ story.url }}"><h2 class="entry-title text-uppercase m-0 mt-5">{{ story.title }}</h2></a>
+                          
+                          <a href="{{ story.url }}" class="btn-read-more">Read more</a>
+                        
+                      </article>
+                    </div>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>

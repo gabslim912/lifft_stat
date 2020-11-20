@@ -1,5 +1,5 @@
 ---
-layout: ''
+layout: story
 title: 'Re-shaping producer associations in Senegal '
 image: "/uploads/fig-3-story.png"
 first_name: Aliou

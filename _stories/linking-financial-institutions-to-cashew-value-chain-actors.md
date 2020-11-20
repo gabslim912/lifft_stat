@@ -1,5 +1,5 @@
 ---
-layout: ''
+layout: story
 title: 'Linking financial institutions to cashew value chain actors  '
 image: "/uploads/fig-1-story.jpg"
 first_name: ''

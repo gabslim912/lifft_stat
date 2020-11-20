@@ -1,5 +1,5 @@
 ---
-layout: ''
+layout: story
 title: 'Organic production of cashews supported by local producers '
 image: "/uploads/fig-2-story.jpg"
 first_name: Valentin
