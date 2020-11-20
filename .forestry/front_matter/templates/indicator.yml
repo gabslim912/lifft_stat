@@ -1,0 +1,31 @@
+---
+label: Indicator
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: subtitle
+  label: subtitle
+- type: number
+  name: result
+  label: result
+- type: number
+  name: goal
+  label: goal
+- type: text
+  name: category
+  label: category
+- type: text
+  name: unit
+  label: unit
+- type: file
+  name: image
+  label: image
+- type: number
+  name: percentage
+  label: percentage
