@@ -1,0 +1,31 @@
+---
+label: Job
+hide_body: false
+fields:
+- type: text
+  name: type
+  label: type
+- type: text
+  name: category
+  label: category
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: email
+  label: email
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: deadline
+  label: deadline
+- type: text
+  name: town
+  label: town
+- type: text
+  name: address
+  label: address
+- type: text
+  name: country
+  label: country
