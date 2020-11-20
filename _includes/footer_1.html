@@ -79,7 +79,7 @@
             </ul>-->
           </div>
         </div>
-        <div class="col-sm-6 col-md-3">
+        <div class="col-sm-6 col-md-6">
           <div class="widget dark">
             <h5 class="widget-title line-bottom">Latest News</h5>
             <div class="latest-posts">
@@ -87,7 +87,7 @@
               <article class="post media-post clearfix pb-0 mb-10">
                 <a href="blog-single-right-sidebar.html" class="post-thumb"><img src="{{ post.image }}" alt="{{ post.title }}" width="80px" height="55px"></a>
                 <div class="post-right">
-                  <h5 class="post-title mt-0 mb-5"><a href="blog-single-right-sidebar.html">{{ post.title | slice: 0, 34 }} ...</a></h5>
+                  <h5 class="post-title mt-0 mb-5"><a href="blog-single-right-sidebar.html">{{ post.title | slice: 0, 90 }} ...</a></h5>
                   <p class="post-date mb-0 font-12">{{ post.publication_date | date: '%b' }} {{ post.publication_date | date: '%d' }}, {{ post.publication_date | date: '%y' }}</p>
                 </div>
               </article>
@@ -100,55 +100,56 @@
             <h5 class="widget-title line-bottom">Useful Links</h5>
             <ul class="list-border">
               <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About us</a></li>
-            <li><a href="/sitemap.html">Sitemap</a></li>
-            <li><a href="/faq.html">Faq's</a></li>
+            <!--<li><a href="/sitemap.html">Sitemap</a></li>-->
+            <li><a href="/faq.html">FAQ</a></li>
+            <li><a href="/stories.html">Success Stories</a></li>
+            <li><a href="/join_us.html">Join our team</a></li>
             <li><a href="/contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3">
-           <div class="widget dark">
-          <h6 class="widget-title line-bottom">Quick Contact</h6>
-          <form id="quick_contact_form2" name="footer_quick_contact_form" class="quick-contact-form" action="includes/quickcontact.php" method="post">
-            <div class="form-group">
-              <input name="form_email" class="form-control" type="text" required="" placeholder="Enter Email">
-            </div>
-            <div class="form-group">
-              <textarea name="form_message" class="form-control" required="" placeholder="Enter Message" rows="3"></textarea>
-            </div>
-            <div class="form-group">
-              <input name="form_botcheck" class="form-control" type="hidden" value="" />
-              <button type="submit" class="btn btn-default btn-flat btn-xs btn-transparent text-gray pt-5 pb-5" data-loading-text="Please wait...">Send Message</button>
-            </div>
-          </form>
+        <!--<div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <h6 class="widget-title line-bottom">Quick Contact</h6>
+            <form id="quick_contact_form2" name="footer_quick_contact_form" class="quick-contact-form" action="includes/quickcontact.php" method="post">
+              <div class="form-group">
+                <input name="form_email" class="form-control" type="text" required="" placeholder="Enter Email">
+              </div>
+              <div class="form-group">
+                <textarea name="form_message" class="form-control" required="" placeholder="Enter Message" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <input name="form_botcheck" class="form-control" type="hidden" value="" />
+                <button type="submit" class="btn btn-default btn-flat btn-xs btn-transparent text-gray pt-5 pb-5" data-loading-text="Please wait...">Send Message</button>
+              </div>
+            </form>
 
-          <!-- Quick Contact Form Validation-->
-          <script type="text/javascript">
-            $("#quick_contact_form2").validate({
-              submitHandler: function(form) {
-                var form_btn = $(form).find('button[type="submit"]');
-                var form_result_div = '#form-result';
-                $(form_result_div).remove();
-                form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
-                var form_btn_old_msg = form_btn.html();
-                form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
-                $(form).ajaxSubmit({
-                  dataType:  'json',
-                  success: function(data) {
-                    if( data.status == 'true' ) {
-                      $(form).find('.form-control').val('');
+            <!-- Quick Contact Form Validation--
+            <script type="text/javascript">
+              $("#quick_contact_form2").validate({
+                submitHandler: function(form) {
+                  var form_btn = $(form).find('button[type="submit"]');
+                  var form_result_div = '#form-result';
+                  $(form_result_div).remove();
+                  form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+                  var form_btn_old_msg = form_btn.html();
+                  form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+                  $(form).ajaxSubmit({
+                    dataType:  'json',
+                    success: function(data) {
+                      if( data.status == 'true' ) {
+                        $(form).find('.form-control').val('');
+                      }
+                      form_btn.prop('disabled', false).html(form_btn_old_msg);
+                      $(form_result_div).html(data.message).fadeIn('slow');
+                      setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
                     }
-                    form_btn.prop('disabled', false).html(form_btn_old_msg);
-                    $(form_result_div).html(data.message).fadeIn('slow');
-                    setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
-                  }
-                });
-              }
-            });
-          </script>
-        </div>
-        </div>
+                  });
+                }
+              });
+            </script>
+          </div>
+        </div>-->
       </div>
       
     </div>

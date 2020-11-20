@@ -16,19 +16,19 @@ layout: default
               {% if faq.number == 1 %}
 
 	            <div class="panel">
-	                <div class="panel-title"> <a data-parent="#accordion1" data-toggle="collapse" href="#accordion1{{ faq.number }}" class="{{ faq.class }}" aria-expanded="{{ faq.expanded }}"> <span class="open-sub"></span> <strong>Q. {{ faq.title }}</strong></a> </div>
+	                <div class="panel-title"> <a data-parent="#accordion1" data-toggle="collapse" href="#accordion1{{ faq.number }}" class="{{ faq.class }}" aria-expanded="{{ faq.expanded }}"> <span class="open-sub"></span> <strong style="font-size: 16px;">Q. {{ faq.title }}</strong></a> </div>
 	                <div id="accordion1{{ faq.number }}" class="panel-collapse collapse in" role="tablist" aria-expanded="{{ faq.expanded }}">
 	                  <div class="panel-content">
-	                    <p>{{ faq.answer }}</p>
+	                    <p style="font-size: 16px;">{{ faq.answer }}</p>
 	                  </div>
 	                </div>
 	            </div>
               {% else %}
               <div class="panel">
-                  <div class="panel-title"> <a data-parent="#accordion1" data-toggle="collapse" href="#accordion1{{ faq.number }}" class="{{ faq.class }}" aria-expanded="{{ faq.expanded }}"> <span class="open-sub"></span> <strong>Q. {{ faq.title }}</strong></a> </div>
+                  <div class="panel-title"> <a data-parent="#accordion1" data-toggle="collapse" href="#accordion1{{ faq.number }}" class="{{ faq.class }}" aria-expanded="{{ faq.expanded }}"> <span class="open-sub"></span> <strong style="font-size: 16px;">Q. {{ faq.title }}</strong></a> </div>
                   <div id="accordion1{{ faq.number }}" class="panel-collapse collapse" role="tablist" aria-expanded="{{ faq.expanded }}">
                     <div class="panel-content">
-                      <p>{{ faq.answer }}</p>
+                      <p style="font-size: 16px;">{{ faq.answer }}</p>
                     </div>
                   </div>
               </div>
@@ -40,11 +40,28 @@ layout: default
             <div class="widget border-1px p-30">
               <h5 class="widget-title line-bottom">ASK A QUESTION </h5>
               <form class="quick-contact-form" action="https://formspree.io/f/mdopdvkk" method="POST">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input name="first_name" class="form-control" type="text" required="" placeholder="First name">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input name="last_name" class="form-control" type="text" required="" placeholder="Last name">
+                    </div>
+                  </div>
+                </div>
+               
+                
                 <div class="form-group">
-                  <input name="email" class="form-control" type="text" required="" placeholder="Enter Email">
+                  <input name="company" class="form-control" type="text" required="" placeholder="Company">
                 </div>
                 <div class="form-group">
-                  <textarea name="message" class="form-control" required="" placeholder="Enter Question" rows="5"></textarea>
+                  <input name="email" class="form-control" type="email" required="" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <textarea name="message" class="form-control" required="" placeholder="Enter Question" rows="3"></textarea>
                 </div>
                 <div class="form-group">
                   <input name="form_botcheck" class="form-control" type="hidden" value="" />

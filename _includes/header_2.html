@@ -2,7 +2,7 @@
     <div class="header-nav">
       <div class="header-nav navbar-fixed-top header-dark  navbar-transparent navbar-sticky-animated animated-active">
         <div class="container-fluid">
-          <nav id="menuzord-right" class="menuzord default"><a class="pull-left flip xs-pull-left mt-15" href="/" ><img src="{{ site.logo_white2 }}" alt="{{ site.title }}" width="150px"></a>
+          <nav id="menuzord-right" class="menuzord default"><a class="pull-left flip xs-pull-left mt-15 hidden-xs" href="/" ><img src="{{ site.logo_white2 }}" alt="{{ site.title }}" width="150px"></a>
             <ul class="menuzord-menu" style="margin-left: 60px;">
               <li class=""><a href="/" style="font-weight: bold; text-transform: uppercase;">Home</a>
                 
@@ -28,14 +28,15 @@
                   <li><a href="/stories.html">Success stories</a></li>
                 </ul>
               </li>
-              <li><a href="javascript:void(0)" style="font-weight: bold; text-transform: uppercase;">News and Events</a>
-                <div class="megamenu">
+              <li><a href="javascript:void(0)" style="font-weight: bold; text-transform: uppercase;">Our News</a>
+                <div class="megamenu megamenu-half-width">
                   <div class="megamenu-row">
                     <div class="col6">
+                      <h3 class="mb-20 line-bottom">Main Menu:</h3>
                       <ul class="list-unstyled list-dashed">
                         
-                        <li><a href="/blog.html"><h3>Latest News</h3></a></li>
-                        <li><a href="/events.html"><h3>Events</h3></a></li>
+                        <li><a href="/blog.html"><h3>Our News</h3></a></li>
+                        <!--<li><a href="/events.html"><h3>Events</h3></a></li>-->
                         <li><a href="/press.html"><h3>Press releases</h3></a></li>
                         <li><a href="/publications.html"><h3>Publications</h3></a></li>
                         
@@ -54,12 +55,13 @@
                     </div>-->
                     
                     <div class="col6">
-                      <h3 class="mb-30">Latest News:</h3>
+                      <h3 class="mb-30 line-bottom">Latest Articles:</h3>
                       <div class="list-dashed">
-                        {% for post in site.posts %}
+                        {% for post in site.posts limit:3 %}
                         <article class="post media-post clearfix pb-0 mb-10"> <a href="{{ post.url }}" class="post-thumb"><img alt="" src="{{ post.image }}" style="width: 50px; height: 50px;"></a>
                           <div class="post-right">
-                            <h4 class="post-title mt-0 text-justify"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                            <h5 class="post-title mt-0 text-justify"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+                            <p class="post-date mb-0 font-12">{{ post.publication_date | date: '%b' }} {{ post.publication_date | date: '%d' }}, {{ post.publication_date | date: '%y' }}</p>
                           </div>
                         </article>
                         {% endfor %}

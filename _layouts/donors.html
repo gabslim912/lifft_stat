@@ -10,7 +10,7 @@ layout: default
       <div class="container">
         <div class="section-content">
 	        <div class="row">
-	          	<div class="title-separator mb-60">
+	          	<div class="title-separator mb-10">
 				  <span class="text-uppercase font-26"> LEAD</span>
 				</div>
 				{% assign donorss = site.donors | where:"category", "Implemented by" %}
@@ -36,7 +36,7 @@ layout: default
 			                        <div class="display-table-cell">
 			                          <h4><b>{{ donor.title }}</b></h4>
 			                          <p>{{ donor.donor_or_partner_biography }}</p>
-			                          
+			                          <a href="{{ donor.website }}" class="btn btn-default mt-10"> Visit website </a>
 			                        </div>
 			                      </div>
 			                  </div>
@@ -48,7 +48,7 @@ layout: default
 	        </div>
 	        <br>
 	        <div class="row">
-	          	<div class="title-separator mb-60">
+	          	<div class="title-separator mb-10">
 				  <span class="text-uppercase font-26"> DONOR</span>
 				</div>
 				{% assign donorss = site.donors | where:"category", "Funded by" %}
@@ -74,7 +74,7 @@ layout: default
 			                        <div class="display-table-cell">
 			                          <h4><b>{{ donor.title }}</b></h4>
 			                          <p>{{ donor.donor_or_partner_biography }}</p>
-			                          
+			                          <a href="{{ donor.website }}" class="btn btn-default mt-10"> Visit website </a>
 			                        </div>
 			                      </div>
 			                  </div>
@@ -86,7 +86,7 @@ layout: default
 	        </div>
 	        <br>
 	        <div class="row">
-	          	<div class="title-separator mb-60">
+	          	<div class="title-separator mb-10">
 				  <span class="text-uppercase font-26"> IMPLEMENTING PARTNER</span>
 				</div>
 				{% assign donorss = site.donors | where:"category", "Implementing partners" %}
@@ -112,7 +112,7 @@ layout: default
 			                        <div class="display-table-cell">
 			                          <h4><b>{{ donor.title }}</b></h4>
 			                          <p>{{ donor.donor_or_partner_biography }}</p>
-			                          
+			                          <a href="{{ donor.website }}" class="btn btn-default mt-10"> Visit website </a>
 			                        </div>
 			                      </div>
 			                  </div>
@@ -124,7 +124,7 @@ layout: default
 	        </div>
 	        <br>
 	        <div class="row">
-	          	<div class="title-separator mb-60">
+	          	<div class="title-separator mb-10">
 				  <span class="text-uppercase font-26"> Monetization PARTNER</span>
 				</div>
 				{% assign donorss = site.donors | where:"category", "Monetization partners" %}
@@ -150,7 +150,7 @@ layout: default
 			                        <div class="display-table-cell">
 			                          <h4><b>{{ donor.title }}</b></h4>
 			                          <p>{{ donor.donor_or_partner_biography }}</p>
-			                          
+			                          <a href="{{ donor.website }}" class="btn btn-default mt-10"> Visit website </a>
 			                        </div>
 			                      </div>
 			                  </div>
