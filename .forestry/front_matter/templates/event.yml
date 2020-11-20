@@ -1,0 +1,40 @@
+---
+label: Event
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: file
+  name: image
+  label: image
+- type: datetime
+  name: start_date
+  label: start_date
+- type: text
+  name: finish_date
+  label: finish_date
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: subtitle
+  label: subtitle
+- type: text
+  name: location_address
+  label: location_address
+- type: text
+  name: location_town
+  label: location_town
+- type: text
+  name: location_region
+  label: location_region
+- type: text
+  name: location_country
+  label: location_country
+- type: text
+  name: phone
+  label: phone
+- type: text
+  name: email
+  label: email
