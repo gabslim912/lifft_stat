@@ -1,0 +1,40 @@
+---
+label: Post
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: lang
+  label: lang
+- type: text
+  name: author
+  label: author
+- type: text
+  name: location_t
+  label: location_t
+- type: text
+  name: location_r
+  label: location_r
+- type: text
+  name: location_c
+  label: location_c
+- type: text
+  name: categories
+  label: categories
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: subtitle
+  label: subtitle
+- type: list
+  name: tags
+  label: tags
+- type: datetime
+  name: publication_date
+  label: publication_date
+- type: file
+  name: image
+  label: image
