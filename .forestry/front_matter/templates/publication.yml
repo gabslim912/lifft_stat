@@ -1,0 +1,19 @@
+---
+label: publication
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: datetime
+  name: publication_date
+  label: publication_date
+- type: text
+  name: title
+  label: title
+- type: text
+  name: subtitle
+  label: subtitle
+- type: file
+  name: file
+  label: file
