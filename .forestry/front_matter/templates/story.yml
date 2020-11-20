@@ -1,0 +1,28 @@
+---
+label: story
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: file
+  name: image
+  label: image
+- type: text
+  name: title
+  label: title
+- type: text
+  name: first_name
+  label: first_name
+- type: text
+  name: last_name
+  label: last_name
+- type: text
+  name: location
+  label: location
+- type: textarea
+  name: subtitle
+  label: subtitle
+- type: datetime
+  name: date
+  label: date
