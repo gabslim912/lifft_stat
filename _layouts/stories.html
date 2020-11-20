@@ -22,7 +22,7 @@ layout: default
             <div class="col-sm-6 col-md-6 col-lg-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="10" style="padding-bottom: 30px;">
               <div class="causes bg-lighter maxwidth500 mb-sm-30">
                 <div class="">
-                  <img class="img-fullwidth img-responsive" alt="{{ story.title }}" src="{{ story.image }}" >
+                  <a href="{{ story.url }}"><img class="img-fullwidth img-responsive" alt="{{ story.title }}" src="{{ story.image }}" ></a>
                 </div>
                 <!--<div class="progress-item mt-0">
                   <div class="progress mb-0">
@@ -30,7 +30,7 @@ layout: default
                   </div>
                 </div>-->
                 <div class="causes-details clearfix border-bottom p-15 pt-10">
-                  <h2><a href="#">{{ story.title }}</a></h2>
+                  <h2><a href="{{ story.url }}">{{ story.title }}</a></h2>
                   <p>{{ story.subtitle }}</p>
                   
                   <div class="mt-10 clearfix">

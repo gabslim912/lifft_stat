@@ -661,6 +661,25 @@ layout: default_1
       <div class="container pb-40 pb-sm-60">
         <div class="section-content">
           <div class="row">
+            <div class="col-md-12">
+              <div class="owl-carousel-3col">
+                {% for story in site.stories %}
+                <div class="item">
+                  <div class="featured-blog">
+                    <img src="{{ story.image }}" alt="{{ story.title }}">
+                    <div class="featured-blog-details">
+                      <h2 class="text-white ">{{ story.title }}</h2>
+                      <!--<p class="text-white">{{ story.content | slice: 0, 70 }}...</p>-->
+                      <a href="#" class="btn btn-theme-colored btn-sm mt-5">read more</a>
+                    </div>
+                  </div>
+                
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+         <!-- <div class="row">
             <div class="col-md-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
               <h3 class="mt-0 line-bottom"><span class="font-weight-300">Upcoming </span> Events</h3>
               {% for event in site.events %}
@@ -676,14 +695,14 @@ layout: default_1
                     <h2 class="event-title media-heading font-raleway font-weight-550"><a href="{{ event.title }}">{{ event.title }}</a></h2>
                     <span class="mb-10 text-gray-darkgray mr-10" style="font-size: 14px;"><i class="fa fa-clock-o mr-5 text-theme-colored"></i> at 5.00 pm - 7.30 pm</span>
                     <span class="text-gray-darkgray" style="font-size: 14px;"><i class="fa fa-map-marker mr-5"></i> {{ event.location_address }}, {{ event.location_town }}, {{ event.location_region }}, {{ event.location_country }}</span>
-                    <!--<p class="mt-5" style="font-size: 14px; text-align: justify;" >{{ event.content | slice: 0, 80 }}...</p>-->
+                   -<p class="mt-5" style="font-size: 14px; text-align: justify;" >{{ event.content | slice: 0, 80 }}...</p>--
                   </div>
                 </div>
               </div>
               {% endfor %}
             </div>
             <div class="col-md-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-              <div class="owl-carousel-1col owl-dots-bottom-right  bg-lighter" data-dots="true">
+              <div class="owl-carousel-1col owl-dots-bottom-right  bg-lighter" data-dots="false">
                 {% for story in site.stories %}
                 <div class="item">
                   <div class="row-fluid">
@@ -692,13 +711,13 @@ layout: default_1
                     </div>
                     <div class="col-md-12 pb-30">
                       <h2 class="line-bottom mt-0">Featured Stories: {{ story.title }}</h2>
-                      <!--<p class="text-justify" >{{ story.content | slice: 0, 300 }}...</p>
+                      <p class="text-justify" >{{ story.content | slice: 0, 300 }}...</p>
                       <div class="mt-10 mb-20">
                         <ul class="list-inline clearfix">
                           <li class="pull-left flip pr-0">Date: <span class="font-weight-700 font-">{{story.date | date: "%b %d, %y"}} </span></li>
                           <li class="text-theme-colored pull-right flip pr-0">Location: <span class="font-weight-700">{{ story.location }}</span></li>
                         </ul>
-                      </div>-->
+                      </div>
                       <a class="btn btn-theme-colored btn-sm text-uppercase" href="{{ story.url }}">Read {{ story.first_name }} {{ story.last_name }} story</a>
                     </div>
                   </div>
@@ -706,7 +725,7 @@ layout: default_1
                 {% endfor %}
               </div>
             </div>
-          </div>
+          </div>-->
         </div>
       </div>
     </section>

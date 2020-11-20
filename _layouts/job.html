@@ -90,54 +90,42 @@ layout: default
         <div class="row">
           <div class="col-md-6 col-md-offset-3 bg-lightest-transparent p-30 pt-10">
             <h3 class="text-center text-theme-colored mb-20">Apply Now</h3>
-            <form id="job_apply_form" name="job_apply_form" action="includes/job.php" method="post" enctype="multipart/form-data">
+            <form action="https://submit-form.com/TmTqlqiv" target="_self" enctype="multipart/form-data">
               <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6" style="padding-left: 0px;">
                   <div class="form-group">
-                    <label>Name <small>*</small></label>
-                    <input name="form_name" type="text" placeholder="Enter Name" required="" class="form-control">
+                    <label>First Name <small>*</small></label>
+                    <input name="first_name" type="text" placeholder="Enter First Name" required="" class="form-control">
                   </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6" style="padding-right: 0px;">
                   <div class="form-group">
-                    <label>Email <small>*</small></label>
-                    <input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+                    <label>Last Name <small>*</small></label>
+                    <input name="last_name" type="text" placeholder="Enter Last Name" required="" class="form-control">
                   </div>
-                </div>
+                
               </div>
               <div class="row">               
-                <div class="col-sm-6">
+                <div class="col-sm-12">
                   <div class="form-group">
-                    <label>Sex <small>*</small></label>
-                    <select name="form_sex" class="form-control required">
-                      <option value="Male">Male</option>
-                      <option value="Female">Female</option>
-                    </select>
+                    <label>Email <small>*</small></label>
+                    <input name="email" class="form-control required email" type="email" placeholder="Enter Email">
                   </div>
                 </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label>Job Post <small>*</small></label>
-                    <select name="form_post" class="form-control required">
-                    {% for job in site.jobs %}
-                      <option value="{{ job.title }}">{{ job.title }}</option>
-                    {% endfor %}
-                    </select>
-                  </div>
-                </div>
+               
               </div>
               <div class="form-group">
                 <label>Message <small>*</small></label>
-                <textarea name="form_message" class="form-control required" rows="5" placeholder="Your cover letter/message sent to the employer"></textarea>
+                <textarea name="message" class="form-control required" rows="5" placeholder="Your cover letter/message sent to the employer"></textarea>
               </div>
               <div class="form-group">
                 <label>Upload your resume here</label>
-                <input name="form_attachment" class="file" type="file" multiple data-show-upload="false" data-show-caption="true">
-                <small>Maximum upload file size: 12 MB</small>
+                <input name="attachment" class="file" type="file" multiple data-show-upload="false" data-show-caption="true">
+                <!--<small>Maximum upload file size: 12 MB</small>-->
               </div>
               <div class="form-group">
-                <input name="form_botcheck" class="form-control" type="hidden" value="" />
-                <button type="submit" class="btn btn-block btn-dark btn-theme-colored btn-sm mt-20 pt-10 pb-10" data-loading-text="Please wait...">Apply Now</button>
+               
+                <button type="submit" class="btn btn-block btn-dark btn-theme-colored btn-sm mt-20 pt-10 pb-10">Apply Now</button>
               </div>
             </form>
             <!-- Job Form Validation-->

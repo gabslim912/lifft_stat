@@ -31,29 +31,29 @@ layout: default
                     </div>
                   </div>
                   <p class="mb-15">{{ page.content }}</p>
-                  <div class="mt-30 mb-0">
+                  <!--<div class="mt-30 mb-0">
                     <h5 class="pull-left flip mt-10 mr-20 text-theme-colored">Share:</h5>
                     <ul class="styled-icons icon-circled m-0">
                       <li><a href="#" data-bg-color="#3A5795"><i class="fa fa-facebook text-white"></i></a></li>
                       <li><a href="#" data-bg-color="#55ACEE"><i class="fa fa-twitter text-white"></i></a></li>
                     </ul>
-                  </div>
+                  </div>-->
                 </div>
               </article>
-              <div class="tagline p-0 pt-20 mt-5">
+               <!--<div class="tagline p-0 pt-20 mt-5">
                 <div class="row" style="margin-bottom: 10px;">
                   <div class="col-md-8">
                     <div class="tags">
                     	<p class="mb-0"><i class="fa fa-tags text-theme-colored"></i> <span>Tags:</span> {% for tag in page.tags %} {{ tag }}, {% endfor %}</p>
                     </div>
                   </div>
-                  <!--<div class="col-md-4">
+                  <div class="col-md-4">
                     <div class="share text-right flip">
                       <p><i class="fa fa-share-alt text-theme-colored"></i> Share</p>
                     </div>
-                  </div>-->
+                  </div>
                 </div>
-              </div>
+              </div>-->
               <div id="comments" class="comments-area pt-20">
               <h2 class="widget-title line-bottom">Leave a comment here</h2>
                 <!-- Facebook Comments plugin -->
@@ -101,22 +101,22 @@ layout: default
                 <div class="widget">
 	                <h5 class="widget-title line-bottom">Latest News</h5>
 	                <div class="latest-posts">
-	                	{% for post in site.posts limit:5 %}
-		                <article class="post media-post clearfix pb-0 mb-10 bg-lighter">
-		                    <a class="post-thumb" href="{{ post.url }}"><img src="{{ post.image }}" alt="{{ post.title }}" style="width: 75px; height: 75px;"></a>
-		                    <div class="post-right">
-		                      <h4 class="post-title mt-0 text-justify"><a href="#">{{ post.title }}</a></h4>
-		                      
-		                    </div>
-		                </article>
-		                {% endfor %}
-	                </div>
+                    {% for post in site.posts limit:5 %}
+                    <article class="post media-post clearfix pb-0 mb-10">
+                      <a href="blog-single-right-sidebar.html" class="post-thumb"><img src="{{ post.image }}" alt="{{ post.title }}" width="80px" height="55px"></a>
+                      <div class="post-right">
+                        <h5 class="post-title mt-0 mb-5"><a href="blog-single-right-sidebar.html">{{ post.title | slice: 0, 34 }} ...</a></h5>
+                        <p class="post-date mb-0 font-12">{{ post.publication_date | date: '%b' }} {{ post.publication_date | date: '%d' }}, {{ post.publication_date | date: '%y' }}</p>
+                      </div>
+                    </article>
+                    {% endfor %}
+            </div>
                 </div>
                 <div class="widget">
 	                <h5 class="widget-title line-bottom">Our Facebook Page</h5>
                   <div id="fb-root"></div>
                   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v8.0&appId=894842400553895&autoLogAppEvents=1" nonce="xQZYtJQ2"></script>
-	                <div class="fb-page" data-href="https://web.facebook.com/LIFFTCashewSFL/" data-tabs="timeline" data-width="" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://web.facebook.com/LIFFTCashewSFL/" class="fb-xfbml-parse-ignore"><a href="https://web.facebook.com/LIFFTCashewSFL/">SFL LIFFT-Cashew Project</a></blockquote></div>
+	                <div class="fb-page" data-href="https://web.facebook.com/LIFFTCashewSFL/" data-tabs="timeline" data-width="" data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://web.facebook.com/LIFFTCashewSFL/" class="fb-xfbml-parse-ignore"><a href="https://web.facebook.com/LIFFTCashewSFL/">SFL LIFFT-Cashew Project</a></blockquote></div>
                 </div>
             </div>
           </div>

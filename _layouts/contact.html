@@ -198,32 +198,36 @@ layout: default
             <div class="col-md-12">
             
               <!-- Contact Form -->
-              <form class="contact-form-transparent" id="contact-form" action="/assets/includes/sendmail.php" name="contact-form" method="post">
+              <form class="contact-form-transparent" action="https://submit-form.com/eDw8MPfA" target="_self">
                 <div class="row">
-                  <div class="col-sm-12">
+                  <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" placeholder="Enter Name" id="contact-form-name" name="contact-form-name" required="" class="form-control">
+                      <input type="text" placeholder="Enter First Name"  name="first_name" required="" class="form-control">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="email" placeholder="Enter Email" id="contact-form-email" name="contact-form-email" class="form-control required email">
+                      <input type="text" placeholder="Enter Last Name"  name="last_name" class="form-control">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" placeholder="Enter Subject" id="contact-form-subject" name="contact-form-subject" class="form-control required">
+                      <input type="email" placeholder="Enter Email"  name="email" class="form-control required email">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input type="text" placeholder="Enter Subject"  name="subject" class="form-control required">
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <textarea rows="5" placeholder="Enter Message" id="contact-form-message" name="contact-form-message" class="form-control required"></textarea>
+                  <textarea rows="5" placeholder="Enter Message"  name="message" class="form-control required"></textarea>
                 </div>
-                <div id="contact-form-result" class="alert alert-success" role="alert" style="display: none;">
+                <div id="result" class="alert alert-success" role="alert" style="display: none;">
                 </div>
                 <div class="form-group text-center mb-0">
-                  <input type="hidden" id="contact-form-botcheck" name="contact-form-botcheck" value="" class="form-control" />
-                  <button data-loading-text="Please wait..." class="btn btn-colored btn-rounded btn-theme-colored pl-30 pr-30" type="submit">Send your message</button>
+                  <button class="btn btn-colored btn-rounded btn-theme-colored pl-30 pr-30" type="submit">Send your message</button>
                 </div>
               </form>
               <!-- Contact Form Validation-->
