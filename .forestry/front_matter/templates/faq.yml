@@ -1,0 +1,19 @@
+---
+label: faq
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: answer
+  label: answer
+- type: number
+  name: number
+  label: number
+- type: text
+  name: class
+  label: class
+- type: text
+  name: expanded
+  label: expanded
