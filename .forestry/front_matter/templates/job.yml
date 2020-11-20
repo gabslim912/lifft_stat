@@ -3,29 +3,30 @@ label: Job
 hide_body: false
 fields:
 - type: text
+  name: title
+  label: Title
+- type: text
   name: type
-  label: type
+  label: Type
 - type: text
   name: category
-  label: category
+  label: Category
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: text
   name: email
-  label: email
-- type: text
-  name: title
-  label: title
+  label: Email
 - type: datetime
   name: deadline
-  label: deadline
+  label: Deadline
 - type: text
   name: town
-  label: town
+  label: Town
 - type: text
   name: address
-  label: address
+  label: Address
 - type: text
   name: country
-  label: country
+  label: Country
