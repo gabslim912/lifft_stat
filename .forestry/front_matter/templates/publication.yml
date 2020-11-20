@@ -5,15 +5,16 @@ fields:
 - type: text
   name: layout
   label: layout
-- type: datetime
-  name: publication_date
-  label: publication_date
+  hidden: true
 - type: text
   name: title
-  label: title
+  label: Title
+- type: datetime
+  name: publication_date
+  label: Publication date
 - type: text
   name: subtitle
-  label: subtitle
+  label: Subtitle
 - type: file
   name: file
-  label: file
+  label: File
