@@ -5,24 +5,25 @@ fields:
 - type: text
   name: layout
   label: layout
-- type: file
-  name: image
-  label: image
+  hidden: true
 - type: text
   name: title
-  label: title
+  label: Title
+- type: file
+  name: image
+  label: Image
 - type: text
   name: first_name
-  label: first_name
+  label: First name
 - type: text
   name: last_name
-  label: last_name
+  label: Last name
 - type: text
   name: location
-  label: location
+  label: Location
 - type: textarea
   name: subtitle
-  label: subtitle
+  label: Subtitle
 - type: datetime
   name: date
-  label: date
+  label: Date
