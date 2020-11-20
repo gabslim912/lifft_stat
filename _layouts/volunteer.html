@@ -37,26 +37,26 @@ layout: default
           <div class="row">
             <div class="col-md-6">
               <h3 class="bg-theme-colored p-15 pl-30 mb-0 text-white">Become a Volunteer</h3>
-              <form id="volunteer_apply_form" class="bg-light p-30 pb-15" name="job_apply_form" action="includes/become-volunteer.php" method="post" enctype="multipart/form-data">
+              <form  class="bg-light p-30 pb-15" name="job_apply_form" action="https://formspree.io/f/mrgolvgw" method="post" enctype="multipart/form-data">
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label>Name <small>*</small></label>
-                      <input name="form_name" type="text" placeholder="Enter Name" required="" class="form-control">
+                      <input name="name" type="text" placeholder="Enter Name" required="" class="form-control">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label>Email <small>*</small></label>
-                      <input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+                      <input name="email" class="form-control required email" type="email" placeholder="Enter Email">
                     </div>
                   </div>
                 </div>
                 <div class="row">               
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label for="form_sex">Sex <small>*</small></label>
-                      <select id="form_sex" name="form_sex" class="form-control required">
+                      <label for="sex">Sex <small>*</small></label>
+                      <select name="sex" class="form-control required">
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                       </select>
@@ -64,8 +64,8 @@ layout: default
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label for="form_branch">Choose Country <small>*</small></label>
-                      <select id="form_branch" name="form_branch" class="form-control required">
+                      <label for="branch">Choose Country <small>*</small></label>
+                      <select name="branch" class="form-control required">
                         <option value="SENEGAL">SENEGAL</option>
                         <option value="GUINEA-BISSAU">GUINEA-BISSAU</option>
                         <option value="GAMBIA">GAMBIA</option>
@@ -76,15 +76,15 @@ layout: default
                 </div>
                 <div class="form-group">
                   <label>Message <small>*</small></label>
-                  <textarea name="form_message" class="form-control required" rows="5" placeholder="Your cover letter/message sent to the employer"></textarea>
+                  <textarea name="message" class="form-control required" rows="5" placeholder="Your cover letter/message sent to the employer"></textarea>
                 </div>
                 <div class="form-group">
-                  <label for="form_attachment">RESUME/ CV UPLOAD</label>
-                  <input id="form_attachment" name="form_attachment" class="file" type="file" multiple data-show-upload="false" data-show-caption="true">
+                  <label for="attachment">RESUME/ CV UPLOAD</label>
+                  <input  name="attachment" class="file" type="file" multiple data-show-upload="false" data-show-caption="true">
                   <small>Maximum upload file size: 12 MB</small>
                 </div>
                 <div class="form-group">
-                  <input name="form_botcheck" class="form-control" type="hidden" value="" />
+                  
                   <button type="submit" class="btn btn-block btn-dark btn-theme-colored btn-sm mt-20 pt-10 pb-10" data-loading-text="Please wait...">Apply Now</button>
                 </div>
               </form>
