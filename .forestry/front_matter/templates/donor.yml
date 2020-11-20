@@ -5,27 +5,28 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: text
   name: category
-  label: category
+  label: Category
 - type: text
   name: title
-  label: title
+  label: Title
 - type: file
   name: logo
-  label: logo
+  label: Logo
 - type: text
   name: quote_author
-  label: quote_author
+  label: Quote author
 - type: text
   name: author_position
-  label: author_position
+  label: Author position
 - type: textarea
   name: quote_text
-  label: quote_text
+  label: Quote text
 - type: textarea
   name: donor_or_partner_biography
-  label: donor_or_partner_biography
+  label: Donor or partner biography
 - type: textarea
   name: donor_or_partner_contribution
-  label: donor_or_partner_contribution
+  label: Donor or partner contribution
