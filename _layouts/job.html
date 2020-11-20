@@ -27,48 +27,48 @@ layout: default
           <div class="col-md-3">
             <div class="job-overview">
               <dl class="dl-horizontal">
-                <dt><i class="fa fa-calendar text-theme-colored mt-5 font-15"></i></dt>
+                <dt><i class="fa fa-calendar text-theme-colored mt-5 font-25"></i></dt>
                 <dd>
-                  <h5 class="mt-0">Date Posted:</h5>
-                  <p>{{ page.date }}</p>
+                  <h3 class="mt-0">Date Posted:</h3>
+                  <p>{{ page.date | date: "%d" }} {{ page.date | date: "%b" }}, {{ page.date | date: "%y" }}</p>
                 </dd>
               </dl>
               <dl class="dl-horizontal">
-                <dt><i class="fa fa-calendar text-theme-colored mt-5 font-15"></i></dt>
+                <dt><i class="fa fa-calendar text-theme-colored mt-5 font-25"></i></dt>
                 <dd>
-                  <h5 class="mt-0">Deadline:</h5>
-                  <p>{{ page.deadline }}</p>
+                  <h2 class="mt-0">Deadline:</h2>
+                  <p>{{ page.deadline | date: "%d" }} {{ page.deadline | date: "%b" }}, {{ page.deadline | date: "%y" }}</p>
                 </dd>
               </dl>
               <dl class="dl-horizontal">
-                <dt><i class="fa fa-map-marker text-theme-colored mt-5 font-15"></i></dt>
+                <dt><i class="fa fa-map-marker text-theme-colored mt-5 font-25"></i></dt>
                 <dd>
-                  <h5 class="mt-0">Location:</h5>
+                  <h2 class="mt-0">Location:</h2>
                   <p>{{ page.town }}, {{ page.country }}</p>
                 </dd>
               </dl>
               <dl class="dl-horizontal">
-                <dt><i class="fa fa-map-marker text-theme-colored mt-5 font-15"></i></dt>
+                <dt><i class="fa fa-map-marker text-theme-colored mt-5 font-25"></i></dt>
                 <dd>
-                  <h5 class="mt-0">Address:</h5>
+                  <h2 class="mt-0">Address:</h2>
                   <p>{{ page.address }}</p>
                 </dd>
               </dl>
               <dl class="dl-horizontal">
-                <dt><i class="fa fa-map-marker text-theme-colored mt-5 font-15"></i></dt>
+                <dt><i class="fa fa-clock-o text-theme-colored mt-5 font-25"></i></dt>
                 <dd>
-                  <h5 class="mt-0">Type:</h5>
+                  <h2 class="mt-0">Type:</h2>
                   <p>{{ page.type }}</p>
                 </dd>
               </dl>
               <dl class="dl-horizontal">
-                <dt><i class="fa fa-money text-theme-colored mt-5 font-15"></i></dt>
+                <dt><i class="fa fa-money text-theme-colored mt-5 font-25"></i></dt>
                 <dd>
-                  <h5 class="mt-0">Salary:</h5>
+                  <h2 class="mt-0">Salary:</h2>
                   <p>$1500 - 3000</p>
                 </dd>
               </dl>
-              <a class="btn btn-dark mt-20" href="#">Apply Now</a>
+              <!--<a class="btn btn-dark mt-20" href="#">Apply Now</a>-->
             </div>
           </div>
           <div class="col-md-9">
@@ -90,7 +90,7 @@ layout: default
         <div class="row">
           <div class="col-md-6 col-md-offset-3 bg-lightest-transparent p-30 pt-10">
             <h3 class="text-center text-theme-colored mb-20">Apply Now</h3>
-            <form action="https://formspree.io/f/mvovqnoy" method="POST" enctype="multipart/form-data">
+            <form action="https://formspree.io/f/mvovqnoy" method="POST" enctype="multipart/form-data" target="_blank">
               <div class="row">
                 <div class="col-sm-6" style="padding-left: 0px;">
                   <div class="form-group">
@@ -114,10 +114,10 @@ layout: default
                 </div>
                
               </div>
-              <div class="form-group">
+              <!--<div class="form-group">
                 <label>Message <small>*</small></label>
                 <textarea name="message" class="form-control required" rows="5" placeholder="Your cover letter/message sent to the employer"></textarea>
-              </div>
+              </div>-->
               <div class="form-group">
                 <label>Upload your resume here</label>
                 <input name="upload" type="file" >

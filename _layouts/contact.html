@@ -198,7 +198,7 @@ layout: default
             <div class="col-md-12">
    
               <!-- Contact Form -->
-              <form class="contact-form-transparent" action="https://formspree.io/f/mwkwqjkj" method="POST">
+              <form class="contact-form-transparent" action="https://formspree.io/f/mwkwqjkj" method="POST" id="my-form" target="_blank">
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
@@ -212,10 +212,15 @@ layout: default
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="email" placeholder="Enter Email"  name="email" class="form-control required email">
+                      <input type="text" placeholder="Enter Your Company Name"  name="company_name" class="form-control">
                     </div>
                   </div>
                   <div class="col-sm-6">
+                    <div class="form-group">
+                      <input type="email" placeholder="Enter Email"  name="email" class="form-control required email">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
                     <div class="form-group">
                       <input type="text" placeholder="Enter Subject"  name="subject" class="form-control required">
                     </div>
@@ -227,30 +232,58 @@ layout: default
                 <div id="result" class="alert alert-success" role="alert" style="display: none;">
                 </div>
                 <div class="form-group text-center mb-0">
-                  <button class="btn btn-colored btn-rounded btn-theme-colored pl-30 pr-30" type="submit">Send your message</button>
+                  <button id="my-form-button" class="btn btn-colored btn-rounded btn-theme-colored pl-30 pr-30" type="submit">Send your message</button>
                 </div>
+                 <p id="my-form-status"></p>
               </form>
               <!-- Contact Form Validation-->
-              <script type="text/javascript">
-                $("#contact-form").validate({
-                  submitHandler: function(form) {
-                    var form_result_div = '#contact-form-result';                  
-                    var form_btn = $(form).find('button[type="submit"]');
-                    var form_btn_old_msg = form_btn.html();
-                    form_btn.html(form_btn.data("loading-text"));
-                    $(form).ajaxSubmit({
-                      target: form_result_div,
-                      success: function(data) {
-                        form_btn.html(form_btn_old_msg);
-                        $(form).find('.form-control').val('');
-                        $(form_result_div).fadeIn('slow');
-                        setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
-                      }
-                    });
-                  }
-                });
-              </script>
+              <script>
+                window.addEventListener("DOMContentLoaded", function() {
 
+                  // get the form elements defined in your form HTML above
+                  
+                  var form = document.getElementById("my-form");
+                  var button = document.getElementById("my-form-button");
+                  var status = document.getElementById("my-form-status");
+
+                  // Success and Error functions for after the form is submitted
+                  
+                  function success() {
+                    form.reset();
+                    button.style = "display: none ";
+                    status.innerHTML = "Thanks!";
+                  }
+
+                  function error() {
+                    status.innerHTML = "Oops! There was a problem.";
+                  }
+
+                  // handle the form submission event
+
+                  form.addEventListener("submit", function(ev) {
+                    ev.preventDefault();
+                    var data = new FormData(form);
+                    ajax(form.method, form.action, data, success, error);
+                  });
+                });
+                
+                // helper function for sending an AJAX request
+
+                function ajax(method, url, data, success, error) {
+                  var xhr = new XMLHttpRequest();
+                  xhr.open(method, url);
+                  xhr.setRequestHeader("Accept", "application/json");
+                  xhr.onreadystatechange = function() {
+                    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+                    if (xhr.status === 200) {
+                      success(xhr.response, xhr.responseType);
+                    } else {
+                      error(xhr.status, xhr.response, xhr.responseType);
+                    }
+                  };
+                  xhr.send(data);
+                }
+              </script>
             </div>
           </div>
         </div>
