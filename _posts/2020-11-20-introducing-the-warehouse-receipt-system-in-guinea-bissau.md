@@ -3,7 +3,7 @@ tags:
 - Warehouse
 - Cashew
 - Guinea-Bissau
-layout: ''
+layout: post
 lang: ''
 title: 'Introducing the warehouse receipt system in Guinea-Bissau '
 author: Charlotte
