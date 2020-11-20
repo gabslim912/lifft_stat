@@ -1,5 +1,8 @@
 ---
-tags: []
+tags:
+- Warehouse
+- Cashew
+- Guinea-Bissau
 layout: ''
 lang: ''
 title: 'Introducing the warehouse receipt system in Guinea-Bissau '
@@ -8,8 +11,10 @@ location_t: Bissau
 location_r: Bissau
 location_c: Guiea-Bissau
 categories: ''
-subtitle: ''
-publication_date: 
+subtitle: Shelter for Life International and its partner Connexus Corporation are
+  advocating for the introduction of the Warehouse Receipt System (WRS) in the cashew
+  sector in The Gambia and Guinea-Bissau
+publication_date: 2020-11-20 00:00:00 +0000
 image: "/uploads/wrs-2.JPG"
 
 ---
