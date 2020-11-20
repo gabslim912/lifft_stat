@@ -27,3 +27,5 @@ fields:
 - type: datetime
   name: date
   label: Date
+pages:
+- _stories/linking-financial-institutions-to-cashew-value-chain-actors.md
