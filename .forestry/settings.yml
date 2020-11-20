@@ -73,7 +73,6 @@ sections:
 - type: jekyll-posts
   label: Blog Posts
   create: all
-  match: "**/*"
   templates:
   - post
 upload_dir: uploads
