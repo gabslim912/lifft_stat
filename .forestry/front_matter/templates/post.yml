@@ -5,36 +5,39 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: text
   name: lang
   label: lang
-- type: text
-  name: author
-  label: author
-- type: text
-  name: location_t
-  label: location_t
-- type: text
-  name: location_r
-  label: location_r
-- type: text
-  name: location_c
-  label: location_c
-- type: text
-  name: categories
-  label: categories
+  hidden: true
 - type: text
   name: title
-  label: title
+  label: Title
+- type: text
+  name: author
+  label: Author
+- type: text
+  name: location_t
+  label: Location town
+- type: text
+  name: location_r
+  label: Location region
+- type: text
+  name: location_c
+  label: Location country
+- type: text
+  name: categories
+  label: Category
 - type: textarea
   name: subtitle
-  label: subtitle
-- type: list
-  name: tags
-  label: tags
+  label: Subtitle
 - type: datetime
   name: publication_date
-  label: publication_date
+  label: Publication date
 - type: file
   name: image
-  label: image
+  label: Image
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
