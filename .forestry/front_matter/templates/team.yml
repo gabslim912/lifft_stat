@@ -1,0 +1,40 @@
+---
+label: team
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: file
+  name: image
+  label: image
+- type: text
+  name: title
+  label: title
+- type: text
+  name: position
+  label: position
+- type: text
+  name: country
+  label: country
+- type: text
+  name: linked_in
+  label: linked_in
+- type: text
+  name: facebook
+  label: facebook
+- type: text
+  name: google_plus
+  label: google_plus
+- type: text
+  name: mail
+  label: mail
+- type: textarea
+  name: education
+  label: education
+- type: text
+  name: address
+  label: address
+- type: text
+  name: phone
+  label: phone
