@@ -12,50 +12,70 @@ sections:
   label: Indicators
   create: all
   match: "**/*"
+  templates:
+  - indicator
 - type: directory
   path: _donors
   label: Donors
   create: all
   match: "**/*"
+  templates:
+  - donor
 - type: directory
   path: _jobs
   label: Jobs
   create: all
   match: "**/*"
+  templates:
+  - job
 - type: directory
   path: _faqs
   label: Faqs
   create: all
   match: "**/*"
+  templates:
+  - faq
 - type: directory
   path: _teams
   label: Teams
   create: all
   match: "**/*"
+  templates:
+  - team
 - type: directory
   path: _stories
   label: Stories
   create: all
   match: "**/*"
+  templates:
+  - story
 - type: directory
   path: _events
   label: Events
   create: all
   match: "**/*"
+  templates:
+  - event
 - type: directory
   path: _publications
   label: Publications
   create: all
   match: "**/*"
+  templates:
+  - publication
 - type: directory
   path: _preleases
-  label: Preleases
+  label: Press releases
   create: all
   match: "**/*"
+  templates:
+  - press
 - type: jekyll-posts
-  label: Posts
+  label: Blog Posts
   create: all
   match: "**/*"
+  templates:
+  - post
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
