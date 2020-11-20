@@ -5,36 +5,37 @@ fields:
 - type: text
   name: layout
   label: layout
-- type: file
-  name: image
-  label: image
-- type: datetime
-  name: start_date
-  label: start_date
-- type: text
-  name: finish_date
-  label: finish_date
+  hidden: true
 - type: text
   name: title
-  label: title
+  label: Title
+- type: file
+  name: image
+  label: Image
+- type: datetime
+  name: start_date
+  label: Start date
+- type: text
+  name: finish_date
+  label: Ending date
 - type: textarea
   name: subtitle
-  label: subtitle
+  label: Subtitle
 - type: text
   name: location_address
-  label: location_address
+  label: Location address
 - type: text
   name: location_town
-  label: location_town
+  label: Location town
 - type: text
   name: location_region
-  label: location_region
+  label: Location region
 - type: text
   name: location_country
-  label: location_country
+  label: Location country
 - type: text
   name: phone
-  label: phone
+  label: Phone
 - type: text
   name: email
-  label: email
+  label: Email
