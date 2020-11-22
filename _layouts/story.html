@@ -32,13 +32,10 @@ layout: default
                     </div>
                   </div>
                   <p class="mb-15">{{ page.content }}</p>
-                  <!--<div class="mt-30 mb-0">
-                    <h5 class="pull-left flip mt-10 mr-20 text-theme-colored">Share:</h5>
-                    <ul class="styled-icons icon-circled m-0">
-                      <li><a href="#" data-bg-color="#3A5795"><i class="fa fa-facebook text-white"></i></a></li>
-                      <li><a href="#" data-bg-color="#55ACEE"><i class="fa fa-twitter text-white"></i></a></li>
-                    </ul>
-                  </div>-->
+                  <div class="mt-30 mb-0">
+                      <div class="fb-share-button" data-href="{{ page.url }}" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | url_encode }}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+                     
+                  </div>
                 </div>
               </article>
               <!--<div class="tagline p-0 pt-20 mt-5">
@@ -56,9 +53,9 @@ layout: default
                 </div>
               </div>-->
               
-              <!--<div id="comments" class="comments-area pt-50">
-
-                <!-- Facebook Comments plugin --
+              <div id="comments" class="comments-area pt-20">
+              <h2 class="widget-title line-bottom">Leave a comment here</h2>
+                <!-- Facebook Comments plugin -->
                 <div id="fb-root"></div>
                 <script>(function(d, s, id) {
                   var js, fjs = d.getElementsByTagName(s)[0];
@@ -67,10 +64,7 @@ layout: default
                   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=409125935834772";
                   fjs.parentNode.insertBefore(js, fjs);
                 }(document, 'script', 'facebook-jssdk'));</script>
-
-                <h3 id="comments-title"><span><fb:comments-count href="http://pc1/themeforest/thememascot/godown-latest/demo/blog-single-facebook-comments.html"></fb:comments-count></span> Comments</h3>
-                
-                <div class="fb-comments" data-href="http://pc1/themeforest/thememascot/godown-latest/demo/blog-single-facebook-comments.html" data-numposts="5"></div>
+                <div class="fb-comments" data-href="{{ page.url | absolute_url  }}" data-numposts="5" data-width="1140"></div>
                 <!-- Facebook Comments end -->
 
               </div>

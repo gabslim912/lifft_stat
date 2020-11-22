@@ -2,9 +2,9 @@
     <div class="header-nav">
       <div class="header-nav navbar-fixed-top header-dark  navbar-transparent  animated-active">
         <div class="container-fluid">
-          <nav id="menuzord-right" class="menuzord default"><a class="pull-left flip xs-pull-left mt-15 " href="/" ><img src="{{ site.logo_white2 }}" alt="{{ site.title }}" width="150px"></a>
+          <nav id="menuzord-right" class="menuzord orange"><a class="pull-left flip xs-pull-left mt-15 " href="/" ><img src="{{ site.logo_white2 }}" alt="{{ site.title }}" width="150px"></a>
             <ul class="menuzord-menu" style="margin-left: 60px;">
-              <li class=""><a href="/" style="font-weight: bold; text-transform: uppercase;">Home</a>
+              <li id="portal" class=""><a href="/" style="font-weight: bold; text-transform: uppercase;">Home</a>
                 
               </li>
               <li><a href="/about.html" style="font-weight: bold; text-transform: uppercase;">What we do</a>
@@ -82,8 +82,16 @@
                 <a href="https://www.shelter.org/donate" target="blank" class="btn btn-grey btn-transparent btn-theme-colored btn-flat hvr-pulse" style="font-weight: bold; text-transform: uppercase;">Donate Now <i class="fa fa-arrow-circle-right"></i></a>
               </li>
             </ul>
+            
           </nav>
         </div>
       </div>
     </div>
   </header>
+  
+            <script type="text/javascript">
+                var portal = document.getElementById('portal');
+                portal.onclick = function() {
+                  $(this).addClass('active');
+                }
+              </script>

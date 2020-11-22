@@ -6,9 +6,18 @@
   <meta name="description" content="Liking Infrastructures and Farmers to Cashew" />
   <meta name="keywords" content="NGO,business,ONG,non-profit,cashew,senegal,gambie,guinea,guinee,bissau,noix,cajou" />
   <meta name="author" content="Gabriel AKAKE" />
+  <meta property="og:url"           content="{{ page.url }}" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="{{ page.title }}" />
+  <meta property="og:description"   content="{{ page.subtitle }}" />
+  <meta property="og:image"         content="{{ page.image }}" />
 
   <!-- Page Title -->
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+
+  <!-- ShareThis BEGIN -->
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5fbadb1e4ef45100122f8511&product=sticky-share-buttons" async="async"></script>
+  <!-- ShareThis END -->
 
   <!-- Favicon and Touch Icons -->
   <link href="/assets/images/favicon.png" rel="shortcut icon" type="image/png">
@@ -43,7 +52,8 @@
   <!-- CSS | Theme Color -->
   <link href="/assets/css/colors/theme-skin-orange.css" rel="stylesheet" type="text/css">
 
-  <!-- external javascripts -->
+  
+<!-- external javascripts -->
   <script src="/assets/js/jquery-2.2.4.min.js"></script>
   <script src="/assets/js/jquery-ui.min.js"></script>
   <script src="/assets/js/bootstrap.min.js"></script>
@@ -53,7 +63,6 @@
   <!-- Revolution Slider 5.x SCRIPTS -->
   <script src="/assets/js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
   <script src="/assets/js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
-
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
