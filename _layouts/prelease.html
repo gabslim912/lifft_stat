@@ -32,10 +32,9 @@ layout: default
                     </div>
                   </div>
                   <p class="mb-15">{{ page.content }}</p>
-                  <div class="mt-30 mb-0">
-                      <div class="fb-share-button" data-href="{{ page.url }}" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | url_encode }}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-                     
-                  </div>
+                  <!-- ShareThis BEGIN -->
+                  <div class="sharethis-inline-share-buttons"></div>
+                  <!-- ShareThis END -->
                   <!--<div class="mt-30 mb-0">
                     <h5 class="pull-left flip mt-10 mr-20 text-theme-colored">Share:</h5>
                     <ul class="styled-icons icon-circled m-0">
