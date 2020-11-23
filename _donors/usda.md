@@ -13,5 +13,6 @@ donor_or_partner_biography: USDA provide leadership on food, agriculture, natura
 donor_or_partner_contribution: |-
   The LIFFT-Cashew Project is a 6-year program (2017 - 2023) funded by USDA to enhance the production and trade of cashews in local and international markets.
   USDA has been investing in the cashew sector of West Africa for more than a decade through investment in production and processing, and everything in between. USDA has also brought together multiple international organizations and stakeholders to unite efforts to strengthen the cashew value chain in the region and make sure investments are operating at full capacity.
+website: https://www.usda.gov/
 
 ---
