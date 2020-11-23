@@ -41,5 +41,3 @@ fields:
   type: tag_list
   default: []
   label: Tags
-pages:
-- _posts/introducing-the-warehouse-receipt-system-in-guinea-bissau.md

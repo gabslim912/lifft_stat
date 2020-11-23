@@ -30,3 +30,8 @@ fields:
 - type: textarea
   name: donor_or_partner_contribution
   label: Donor or partner contribution
+- name: website
+  type: text
+  config:
+    required: false
+  label: Website
