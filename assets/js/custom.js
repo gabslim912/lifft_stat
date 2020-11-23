@@ -1577,6 +1577,8 @@ var THEMEMASCOT = {};
                     var string_1 = $(this).find('span:first-child').text();
                     var string_2 = $(this).find('span:nth-child(2)').text();
                     var string_3 = $(this).find('span:nth-child(3)').text();
+                    var string_4 = $(this).find('span:nth-child(4)').text();
+                    var string_5 = $(this).find('span:nth-child(5)').text();
                     var str = '';
                     var $this = $(this);
                     if (!string_2.trim() || !string_3.trim()) {
@@ -1587,6 +1589,12 @@ var THEMEMASCOT = {};
                     }
                     if (string_1.length && string_2.length && string_3.length) {
                         str = [string_1, string_2, string_3];
+                    }
+                    if (string_1.length && string_2.length && string_3.length && string_4.length) {
+                        str = [string_1, string_2, string_3, string_4];
+                    }
+                    if (string_1.length && string_2.length && string_3.length && string_4.length && string_5.length) {
+                        str = [string_1, string_2, string_3, string_4, string_5];
                     }
                     var speed = $(this).data('speed');
                     var back_delay = $(this).data('back_delay');
