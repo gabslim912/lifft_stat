@@ -34,35 +34,35 @@ layout: default
                 </dd>
               </dl>-->
               <dl class="dl-horizontal">
-                <dt><i class="fa fa-calendar text-theme-colored mt-5 font-25"></i></dt>
+                <dt class="hidden-xs hidden-sm"><i class="fa fa-calendar text-theme-colored mt-5 font-25"></i></dt>
                 <dd>
                   <h2 class="mt-0">Deadline:</h2>
                   <p>{{ page.deadline | date: "%d" }} {{ page.deadline | date: "%b" }}, {{ page.deadline | date: "%y" }}</p>
                 </dd>
               </dl>
               <dl class="dl-horizontal">
-                <dt><i class="fa fa-map-marker text-theme-colored mt-5 font-25"></i></dt>
+                <dt class="hidden-xs hidden-sm"><i class="fa fa-map-marker text-theme-colored mt-5 font-25"></i></dt>
                 <dd>
                   <h2 class="mt-0">Location:</h2>
                   <p>{{ page.town }}, {{ page.country }}</p>
                 </dd>
               </dl>
               <dl class="dl-horizontal">
-                <dt><i class="fa fa-map-marker text-theme-colored mt-5 font-25"></i></dt>
+                <dt class="hidden-xs hidden-sm"><i class="fa fa-map-marker text-theme-colored mt-5 font-25"></i></dt>
                 <dd>
                   <h2 class="mt-0">Address:</h2>
                   <p>{{ page.address }}</p>
                 </dd>
               </dl>
               <dl class="dl-horizontal">
-                <dt><i class="fa fa-clock-o text-theme-colored mt-5 font-25"></i></dt>
+                <dt class="hidden-xs hidden-sm"><i class="fa fa-clock-o text-theme-colored mt-5 font-25"></i></dt>
                 <dd>
                   <h2 class="mt-0">Type:</h2>
                   <p>{{ page.type }}</p>
                 </dd>
               </dl>
               <dl class="dl-horizontal">
-                <dt><i class="fa fa-money text-theme-colored mt-5 font-25"></i></dt>
+                <dt class="hidden-xs hidden-sm"><i class="fa fa-money text-theme-colored mt-5 font-25"></i></dt>
                 <dd>
                   <h2 class="mt-0">Salary:</h2>
                   <p>$1500 - 3000</p>
@@ -71,7 +71,7 @@ layout: default
               <!--<a class="btn btn-dark mt-20" href="#">Apply Now</a>-->
             </div>
           </div>
-          <div class="col-md-9">
+          <div class="col-md-9 mt-xs-15">
             <div class="icon-box mb-0 p-0">
               <a href="#" class="icon icon-gray pull-left mb-0 mr-10">
                 <i class="pe-7s-users"></i>
@@ -89,24 +89,22 @@ layout: default
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 bg-lightest-transparent p-30 pt-10">
-            <h3 class="text-center text-theme-colored mb-20">Apply Now</h3>
+            <h1 class="text-center text-theme-colored mb-20">Apply Now</h1>
             <form action="https://formspree.io/f/mvovqnoy" method="POST" enctype="multipart/form-data" target="_blank">
               <div class="row">
-                <div class="col-sm-6" style="padding-left: 0px;">
+                <div class="col-sm-6 col-xs-12">
                   <div class="form-group">
                     <label>First Name <small>*</small></label>
                     <input name="first_name" type="text" placeholder="Enter First Name" required="" class="form-control">
                   </div>
                 </div>
-                <div class="col-sm-6" style="padding-right: 0px;">
+                <div class="col-sm-6 col-xs-12">
                   <div class="form-group">
                     <label>Last Name <small>*</small></label>
                     <input name="last_name" type="text" placeholder="Enter Last Name" required="" class="form-control">
                   </div>
-                
-              </div>
-              <div class="row">               
-                <div class="col-sm-12">
+                </div>             
+                <div class="col-sm-12 col-xs-12">
                   <div class="form-group">
                     <label>Email <small>*</small></label>
                     <input name="email" class="form-control required email" type="email" placeholder="Enter Email">
