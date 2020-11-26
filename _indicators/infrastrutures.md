@@ -1,5 +1,5 @@
 ---
-title: Infrastrutures
+title: Infrastruture
 layout: indicator
 subtitle: Number of kilometers of feeder roads constructed in 2020
 result: 42

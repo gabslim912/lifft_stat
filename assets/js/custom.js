@@ -1344,7 +1344,7 @@ var THEMEMASCOT = {};
             var $piechart = $('.piechart');
             if( $piechart.length > 0 ) {
                 $piechart.appear();
-                $document_body.on('appear', '.piechart', function() {
+                $document_body.on('appear','.piechart', function() {
                     var current_item = $(this);
                     if (!current_item.hasClass('appeared')) {
                         var barcolor = current_item.data('barcolor');
