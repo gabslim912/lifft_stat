@@ -229,9 +229,17 @@ layout: default
                 <div class="form-group">
                   <textarea rows="5" placeholder="Enter Message"  name="message" class="form-control required"></textarea>
                 </div>
-                <div class="g-recaptcha" data-sitekey="6LcZz-8ZAAAAAC1sGgo2nGBBllScwtlIbu61VsUN"></div>
-                <div class="form-group text-center mb-0">
-                  <button id="my-form-button" class="btn btn-colored btn-flat bt-lg btn-theme-colored pl-30 pr-30" type="submit">Send your message</button>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <div class="g-recaptcha" data-sitekey="6LcZz-8ZAAAAAC1sGgo2nGBBllScwtlIbu61VsUN"></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group text-center pull-right mb-0">
+                      <button id="my-form-button" class="btn btn-default btn-flat btn-xl btn-theme-colored pl-30 pr-30 font-25" style="height: 76px;" type="submit"><i class="fa fa-paper-plane pr-10"></i> Send your message</button>
+                    </div>
+                  </div>
                 </div>
                  <p id="my-form-status"></p>
               </form>
