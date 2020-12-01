@@ -2,8 +2,8 @@
 title: Training
 layout: indicator
 subtitle: Number of farmers that received training on organic production in 2020
-result: 2,094
-goal: 2,500
+result: '2,094'
+goal: '2,500'
 category: Formations
 image: "/uploads/formation.jpg"
 unit: People
