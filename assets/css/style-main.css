@@ -919,6 +919,9 @@ section > .container-fluid {
 .layer-overlay.overlay-yellow::before {
   background-color: rgba(255, 187, 34, 0.9);
 }
+.layer-overlay.overlay-custom-orange::before {
+  background-color: rgba(194, 109, 40, 0.6);
+}
 .layer-overlay.overlay-yellow-light::before {
   background-color: rgba(255, 187, 34, 0.45);
 }
@@ -5074,7 +5077,7 @@ blockquote p {
   top: -12px;
 }
 .separator {
-  color: #ccc;
+  color: #000;
   line-height: 1.2em;
   margin: 30px auto;
   overflow: hidden;
@@ -5083,7 +5086,7 @@ blockquote p {
 }
 .separator::before,
 .separator::after {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #000;
   content: "";
   display: inline-block;
   height: .65em;
