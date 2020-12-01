@@ -9,6 +9,16 @@ fields:
   name: layout
   label: layout
   hidden: true
+- name: goal
+  type: text
+  config:
+    required: false
+  label: Goal
+- name: result
+  type: text
+  config:
+    required: false
+  label: Result
 - type: text
   name: subtitle
   label: Subtitle
@@ -24,13 +34,3 @@ fields:
 - type: number
   name: percentage
   label: Percentage
-- name: result
-  type: text
-  config:
-    required: false
-  label: Result
-- name: goal
-  type: text
-  config:
-    required: false
-  label: Goal
