@@ -12,12 +12,6 @@ fields:
 - type: text
   name: subtitle
   label: Subtitle
-- type: number
-  name: result
-  label: Result
-- type: number
-  name: goal
-  label: Goal
 - type: text
   name: category
   label: Category
@@ -30,3 +24,13 @@ fields:
 - type: number
   name: percentage
   label: Percentage
+- name: result
+  type: text
+  config:
+    required: false
+  label: Result
+- name: goal
+  type: text
+  config:
+    required: false
+  label: Goal
