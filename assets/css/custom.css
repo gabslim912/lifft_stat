@@ -4,3 +4,41 @@
 #post-content img{
 	width: 100%;
 }
+.separator-white {
+  color: #fff;
+  line-height: 1.2em;
+  margin: 30px auto;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+.separator-white::before,
+.separator-white::after {
+  border-bottom: 1px solid #fff;
+  content: "";
+  display: inline-block;
+  height: .65em;
+  margin: 0 -4px 0 -100%;
+  vertical-align: top;
+  width: 50%;
+}
+.separator-white::after {
+  margin: 0 -100% 0 0;
+}
+.separator-white i,
+.separator-white span,
+.separator-white a {
+  display: inline-block;
+  margin: 0 20px 0 24px;
+  font-size: 20px;
+}
+.line-bottom-white:after,
+.title-dots span {
+  background: #fff;
+}
+.icon-box.icon-rounded-bordered i,
+.widget .line-bottom-white:after,
+.widget .line-bottom-white:after,
+.pager.theme-colored a {
+  border: 1px solid #fff;
+}
