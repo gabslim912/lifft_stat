@@ -2,7 +2,7 @@
 layout: donors
 category: Monetization partners
 title: CANTERA PARTNERS
-logo: "/uploads/cantera_partners.jpg"
+logo: "/uploads/cantera_partners-1.png"
 quote_author: MICHAEL JUNG
 author_position: President
 quote_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam vero
