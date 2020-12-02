@@ -2,7 +2,7 @@
 layout: donors
 category: Implemented by
 title: Shelter For Life International
-logo: "/uploads/logo_sfl.png"
+logo: "/uploads/sfl_international.png"
 quote_author: Laurent Gomis
 author_position: COP
 quote_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam vero
