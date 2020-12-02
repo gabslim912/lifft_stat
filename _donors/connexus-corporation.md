@@ -23,5 +23,6 @@ donor_or_partner_contribution: As part of the USDA Food for Progress project Lin
   direct investments and value chain finance to meet international quantity and quality
   expectations.
 website: https://connexuscorporation.com/
+published: false
 
 ---
