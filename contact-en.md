@@ -1,6 +1,6 @@
 ---
 layout: contact
-title: Contact
+title: Contact Us
 subtitle: Let's get in touch
 permalink: "/contact.html"
 parallax_image: "/assets/img/cashew_511.png"

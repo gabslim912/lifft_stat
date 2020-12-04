@@ -62,6 +62,8 @@ logo_white: "/assets/img/logo_white_2.png"
 logo_white2: "/assets/img/logo_white2.png"
 logo_dark: "/assets/images/logo_dark.png"
 logo_new: "/assets/img/logo_new.png"
+logo_colored: "/assets/img/lifft_logo_color.png"
+logo_blanc: "/assets/img/lifft_logo_white.png"
 description: >- # this means to ignore newlines until "baseurl:"
   Our program develops value chain linkages necessary to support an integrated regional trade network for the cashew value chain, 
   and enhancing the production and trade of cashews in local and international markets.
