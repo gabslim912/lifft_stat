@@ -83,14 +83,7 @@ layout: default
 
                   // Success and Error functions for after the form is submitted
 
-                  $(form).each(function() {
-                      $(this).find(':button[type="submit"]').prop('disabled', true);
-                  });
-                  function correctCaptcha() {
-                      $(form).each(function() {
-                          $(this).find(':button[type="submit"]').prop('disabled', false);
-                      });
-                  }
+                 
 
                   
                   function success() {
@@ -121,9 +114,11 @@ layout: default
                   xhr.onreadystatechange = function() {
                     if (xhr.readyState !== XMLHttpRequest.DONE) return;
                     if (xhr.status === 200) {
+                      $("#my-form-button").prop('disabled', false);
                       success(xhr.response, xhr.responseType);
                     } else {
-                      error(xhr.status, xhr.response, xhr.responseType);
+                      $("#my-form-button").prop('disabled', true);
+                      // error(xhr.status, xhr.response, xhr.responseType);
                     }
                   };
                   xhr.send(data);
