@@ -65,7 +65,7 @@ layout: default
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group text-center pull-right mb-0">
-                      <button id="my-form-button" class="btn btn-default btn-flat btn-xl btn-theme-colored pl-30 pr-30 font-25 " style="height: 76px;" type="submit" disabled="true"><i class="fa fa-paper-plane pr-10"></i> Send your message</button>
+                      <button id="my-form-button" class="btn btn-default btn-flat btn-xl btn-theme-colored pl-30 pr-30 font-25 hidden" style="height: 76px;" type="submit" disabled="true"><i class="fa fa-paper-plane pr-10"></i> Send your message</button>
                     </div>
                   </div>
                 </div>
@@ -73,15 +73,17 @@ layout: default
               </form>
 
               <script>
-                  function recaptchaCallback() {
+                 /* function recaptchaCallback() {
                       var btnSubmit = document.getElementById("my-form-button");
-                      if ( btnSubmit.prop("disabled", true) ) {
-                          btnSubmit.removeAttr('disabled');
-                          //Disable Button if No reCaptcha
-
-
+                      if ( btnSubmit.classList.contains("hidden") ) {
+                          btnSubmit.classList.remove("hidden");
+                          btnSubmitclassList.add("show");
                       }
-                  }
+                  }*/
+
+                   function recaptchaCallback(){
+                       document.getElementById("my-form-button").disabled = false;
+                     }
               </script>
               <!-- Contact Form Validation-->
               <script>
