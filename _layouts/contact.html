@@ -60,7 +60,7 @@ layout: default
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <div class="g-recaptcha required" data-sitekey="6LcZz-8ZAAAAAC1sGgo2nGBBllScwtlIbu61VsUN"></div>
+                      <div class="g-recaptcha" data-sitekey="6LcZz-8ZAAAAAC1sGgo2nGBBllScwtlIbu61VsUN"></div>
                     </div>
                   </div>
                   <div class="col-sm-6">
@@ -82,6 +82,16 @@ layout: default
                   var status = document.getElementById("my-form-status");
 
                   // Success and Error functions for after the form is submitted
+
+                  $(form).each(function() {
+                      $(this).find(':input[type="submit"]').prop('disabled', true);
+                  });
+                  function correctCaptcha() {
+                      $("form").each(function() {
+                          $(this).find(':input[type="submit"]').prop('disabled', false);
+                      });
+                  }
+
                   
                   function success() {
                     form.reset();
