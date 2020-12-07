@@ -42,3 +42,9 @@
 .pager.theme-colored a {
   border: 1px solid #fff;
 }
+
+.bottom-leftt {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}

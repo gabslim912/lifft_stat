@@ -1,6 +1,6 @@
 ---
 layout: team_member
-image: "/uploads/bio.png"
+image: "/uploads/elisabete_dumbia.jpg"
 linked_in: "#"
 facebook: "#"
 google_plus: "#"

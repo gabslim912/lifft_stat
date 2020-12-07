@@ -1,30 +1,37 @@
 <header id="header" class="header">
-    <div class="header-nav">
+    <div class="header-nav" id="topheader">
       <div class="header-nav navbar-fixed-top header-dark  navbar-transparent  animated-active">
         <div class="container-fluid">
-          <nav id="menuzord-right" class="menuzord orange-logo"><a class="pull-left flip xs-pull-left mt-15 " href="/" ><img src="{{ site.logo_colored }}" alt="{{ site.title }}" width="150px"></a>
+          <nav id="menuzord-right" class="menuzord orange-logo"><a class="pull-left flip xs-pull-left mt-15 " href="/" ><img src="{{ site.logo_white2 }}" alt="{{ site.title }}" width="150px"></a>
             <ul class="menuzord-menu" style="margin-left: 60px;">
-              <li id="portal" class=""><a href="/" style="font-weight: bold; text-transform: uppercase;">Home</a>
+              <li ><a href="/" style="font-weight: bold; text-transform: uppercase;">Home</a>
                 
               </li>
-              <li><a href="/about.html" style="font-weight: bold; text-transform: uppercase;">What we do</a>
+              <li id=""><a href="/about.html" style="font-weight: bold; text-transform: uppercase;">What we do</a>
                 <ul class="dropdown">
-                  <li><a href="/about.html">About Us</a></li>
+                  <li id="portal"><a href="/about.html">About Us</a></li>
                   <li><a href="/donors.html">Donors & Partners</a></li>
                   <li><a href="/faq.html">FAQ</a></li>
                 </ul>
               </li>
-              
+              <script type="text/javascript">
+                $(document.getElementById("portal")).ready(function() {
+                  $(document.getElementById("portal")).addClass('active');
+                });
+                
+              </script>
+               
               <!--<li><a href="/our_work.html">Our Work</a>
                 <ul class="dropdown">
                   <li><a href="#">Our Approach</a></li>
                   <li><a href="#">Our Intervention Area</a></li>
+
                   
                 </ul>
               </li>-->
-              <li><a href="javascript:void(0)" style="font-weight: bold; text-transform: uppercase;">Impact</a>
+              <li><a href="" style="font-weight: bold; text-transform: uppercase;">Impact</a>
                 <ul class="dropdown">
-                  <li><a href="/indicators.html">Project Results</a></li>
+                  <li class="active"><a href="/indicators.html">Project Results</a></li>
                   <li><a href="/stories.html">Success Stories</a></li>
                 </ul>
               </li>
@@ -88,10 +95,3 @@
       </div>
     </div>
   </header>
-  
-            <script type="text/javascript">
-                var portal = document.getElementById('portal');
-                portal.onclick = function() {
-                  $(this).addClass('active');
-                }
-              </script>

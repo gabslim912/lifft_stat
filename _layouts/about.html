@@ -10,7 +10,7 @@ layout: default
       <div class="container pb-0">
         <div class="section-content">
           <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-6">
               <div class="owl-carousel-1col text-center" data-nav="false">
                 <div class="item">
                   <img src="/assets/img/cashew_141.jpg" alt="">
@@ -26,17 +26,17 @@ layout: default
                 </div>
               </div>
             </div>
-            <div class="col-md-7">
-              <h2 class="text-theme-colored mt-0 mb-20 text-justify" style="font-weight: bold; font-size: 20px;">The Linking Infrastructure, Finance, and Farms to Cashew (LIFFT-Cashew) is a sub-regional project designed to create a more integrated and durable regional network in the Senegal, The Gambia, and Guinea-Bissau cashew production zone (SeGaBi Zone).</h2>
+            <div class="col-md-6">
+              <h2 class="text-theme-colored mt-0 mb-20 text-justify" style="font-weight: bold; font-size: 21px;">The Linking Infrastructure, Finance, and Farms to Cashew (LIFFT-Cashew) is a sub-regional project designed to create a more integrated and durable regional network in the Senegal, The Gambia, and Guinea-Bissau cashew production zone (SeGaBi Zone).</h2>
               <p class="text-justify" style="font-size: 17px;">We want to enhance the cultivation of cashews and the processing, and selling of cashew products in the local and international markets. LIFFT-Cashew is implemented by Shelter For Life International with funding from the United States Department of Agriculture. We are working with partners to facilitate access to agricultural finance to cashew producers and processors, rapid flow of finance, and investment in the cashew value chain in the SeGaBi Zone.</p>
               
             </div>
           </div>
           
-          <div class="row mt-30 mb-20 pt-10 pb-20 pl-10 pr-10 bg-lighter">
+          <div class="row mt-30 pt-10 pb-20 pl-10 pr-10 bg-lighter">
             
             <div class="col-md-12">
-              <h1 class="text-theme-colored" style="font-weight: bold;">Approach</h1>
+              <h1 class="heading-title text-uppercase line-bottom">Approach</h1>
               <p>We take an integrated approach along the cashew value chain, with activities in the following areas:</p>
               <ul class="list theme-colored check pt-0">
                 <li  style="font-size: 17px;"><b>INFRASTRUCTURE</b>: Construction and rehabilitation of rural roads to facilitate the flow of cashew nuts</li>
@@ -59,7 +59,7 @@ layout: default
 	        <div class="row">
 	          <div class="col-md-12"> 
 	            <div class="heading-line-bottom">
-	              <h1 class="heading-title">OUR WORK: Linking Infrastructure, Finance, and Farms to Cashew (LIFFT-Cashew)</h1>
+	              <h1 class="heading-title">OUR WORK: Linking Infrastructure, Finance, and Farms to Cashew</h1>
 	            </div> 
 	          </div>
 	          <div class="col-md-6 p-xs-15">
@@ -179,164 +179,79 @@ layout: default
 	</section>-->
 	
 
-	<!-- Section: Volunteer --
-    <section>
-      <div class="container pb-30">
-      	<div class="title-separator mb-60">
-	        <span class="text-uppercase font-36"> OUR TEAM</span>
-		  </div>
-        <div class="section-content">
+	
+
+     <!-- Divider: Funfact -->
+    <!-- Section: Events and stories --
+
+   <section class="bg-light">
+      <div class="container pb-30 pb-sm-30">
+        <div class="section-title text-center">
           <div class="row">
-            <div class="col-sm-6 col-md-3 col-lg-3 mb-30">
-              <div class="team-member">
-                <div class="volunteer-thumb"> <img src="http://placehold.it/360x360" alt="" class="img-fullwidth img-responsive"> </div>
-                <div class="member-info mb-20">
-                  <div class="member-biography p-20">
-                    <h3 class="text-white mt-0 mb-10">John Doe</h3>
-                    <h5 class="text-white">COP</h5>
-                  </div>
-                  <div class="social-network bg-white text-center">
-                    <ul class="social-icons icon-hover-theme-colored icon-circled pt-5">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+            <div class="col-md-8 col-md-offset-2">
+              <h2 class="mt-0 line-height-1 text-center text-uppercase font-28">Meet our <span class="text-theme-colored">Team members</span></h2>
             </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 mb-30">
-              <div class="team-member">
-                <div class="volunteer-thumb"> <img src="http://placehold.it/360x360" alt="" class="img-fullwidth img-responsive"> </div>
-                <div class="member-info mb-20">
-                  <div class="member-biography p-20">
-                    <h3 class="text-white mt-0 mb-10">John Doe</h3>
-                    <h5 class="text-white">DCOP</h5>
+            
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row mtli-row-clearfix">
+            <div class="col-md-12">
+              <div class="owl-carousel-4col" data-nav="true">
+                {% for team in site.teams %}
+                <div class="item overle overlay-dark">
+                  <div class="team-block">
+                    <div class="team-thumb"><img class="img-fullwidth" src="{{ team.image }}" alt="{{ team.title }}">
+                      <div class="team-overlay">
+                        <ul class="list-inline text-white font-12 mb-10">
+                          <li><i aria-hidden="true" class="fa fa-phone text-theme-color-2 mr-10"></i>Mob: {{ team.phone }}</li>
+                          <li><i aria-hidden="true" class="fa fa-envelope-o text-theme-color-2 mr-10"></i>Email: {{ team.mail }}</li>
+                        </ul>
+                        <ul class="styled-icons icon-theme-colored icon-circled icon-dark icon-sm mt-15 mb-0">
+                          <li><a href="{{ team.facebook }}"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="{{ team.google_plus }}"><i class="fa fa-google-plus"></i></a></li>
+                          <li><a href="{{ team.linked_in }}"><i class="fa fa-linkedin"></i></a></li>
+                          
+                        </ul>--
+                        
+                      </div>
+                    </div>
+                    <div class="info">
+                      <h3 style="font-weight: 500;" class="title text-theme-colored">{{ team.title }}</h3>
+                      <h5 style="font-weight: 300;">{{ team.position }}</h5>
+                      <a href="#" class="btn btn-default btn-theme-colored btn-flat pull-left">Read More</a>--
+                    </div>
                   </div>
-                  <div class="social-network bg-white text-center">
-                    <ul class="social-icons icon-hover-theme-colored icon-circled pt-5">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    </ul>
+                </div>
+                {% endfor %} 
+              </div>
+            </div>         
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="home" class="divider">
+      <div class="container p-0">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-carousel-3col">
+              {% for team in site.teams %}
+              <div class="item">
+                <div class="featured-blog">
+                  <img src="{{ team.image }}" alt="{{ team.title }}">
+                  <div class="featured-blog-details" style="height: 100%; margin-top: 0px; padding-bottom: 40px; background-color: rgba(0,0,0,0.5);">
+                    <h2 class="text-white" style="font-weight: 700;">{{ team.title }}</h2>
+                    <p class="text-white">{{ team.position }}</p>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 mb-30">
-              <div class="team-member">
-                <div class="volunteer-thumb"> <img src="http://placehold.it/360x360" alt="" class="img-fullwidth img-responsive"> </div>
-                <div class="member-info mb-20">
-                  <div class="member-biography p-20">
-                    <h3 class="text-white mt-0 mb-10">Jane Doe</h3>
-                    <h5 class="text-white">DCOP</h5>
-                  </div>
-                  <div class="social-network bg-white text-center">
-                    <ul class="social-icons icon-hover-theme-colored icon-circled pt-5">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 mb-30">
-              <div class="team-member">
-                <div class="volunteer-thumb"> <img src="http://placehold.it/360x360" alt="" class="img-fullwidth img-responsive"> </div>
-                <div class="member-info mb-20">
-                  <div class="member-biography p-20">
-                    <h3 class="text-white mt-0 mb-10">Jane Doe</h3>
-                    <h5 class="text-white">MANAGER</h5>
-                  </div>
-                  <div class="social-network bg-white text-center">
-                    <ul class="social-icons icon-hover-theme-colored icon-circled pt-5">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 mb-30">
-              <div class="team-member">
-                <div class="volunteer-thumb"> <img src="http://placehold.it/360x360" alt="" class="img-fullwidth img-responsive"> </div>
-                <div class="member-info mb-20">
-                  <div class="member-biography p-20">
-                    <h3 class="text-white mt-0 mb-10">Jane Doe</h3>
-                    <h5 class="text-white">MANAGER</h5>
-                  </div>
-                  <div class="social-network bg-white text-center">
-                    <ul class="social-icons icon-hover-theme-colored icon-circled pt-5">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 mb-30">
-              <div class="team-member">
-                <div class="volunteer-thumb"> <img src="http://placehold.it/360x360" alt="" class="img-fullwidth img-responsive"> </div>
-                <div class="member-info mb-20">
-                  <div class="member-biography p-20">
-                    <h3 class="text-white mt-0 mb-10">Jane Doe</h3>
-                    <h5 class="text-white">MANAGER</h5>
-                  </div>
-                  <div class="social-network bg-white text-center">
-                    <ul class="social-icons icon-hover-theme-colored icon-circled pt-5">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 mb-30">
-              <div class="team-member">
-                <div class="volunteer-thumb"> <img src="http://placehold.it/360x360" alt="" class="img-fullwidth img-responsive"> </div>
-                <div class="member-info mb-20">
-                  <div class="member-biography p-20">
-                    <h3 class="text-white mt-0 mb-10">John Doe</h3>
-                    <h5 class="text-white">OFFICER</h5>
-                  </div>
-                  <div class="social-network bg-white text-center">
-                    <ul class="social-icons icon-hover-theme-colored icon-circled pt-5">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 mb-30">
-              <div class="team-member">
-                <div class="volunteer-thumb"> <img src="http://placehold.it/360x360" alt="" class="img-fullwidth img-responsive"> </div>
-                <div class="member-info mb-20">
-                  <div class="member-biography p-20">
-                    <h3 class="text-white mt-0 mb-10">John Doe</h3>
-                    <h5 class="text-white">OFFICER</h5>
-                  </div>
-                  <div class="social-network bg-white text-center">
-                    <ul class="social-icons icon-hover-theme-colored icon-circled pt-5">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              {% endfor %} 
             </div>
           </div>
         </div>
       </div>
-    </section>-->
-     <!-- Divider: Funfact -->
-    <!-- Divider: STATISTICS -->
+    </section>
+    <!-- Divider: STATISTICS --
     <section class="divider parallax layer-overlay overlay-dark-6" data-bg-img="/assets/img/cashew_141.jpg" data-parallax-ratio="0.2">
       <div class="container pt-90 pb-90">
         <div class="row">
@@ -383,58 +298,6 @@ layout: default
         </div>
       </div>
     </section>
-
-    <!-- Section: Events and stories -->
-
-   <!-- <section class="bg-light">
-      <div class="container pb-30 pb-sm-30">
-        <div class="section-title text-center">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <h2 class="mt-0 line-height-1 text-center text-uppercase font-28">Meet our <span class="text-theme-colored">Team members</span></h2>
-            </div>
-            <br>
-            <div class="separator">
-              <!--<span style="color: black;">Meet our operational staff members</span>-
-            </div>
-          </div>
-        </div>
-        <div class="section-content">
-          <div class="row mtli-row-clearfix">
-            <div class="col-md-12">
-              <div class="owl-carousel-4col" data-nav="true">
-                {% for team in site.teams %}
-                <div class="item">
-                  <div class="team-block">
-                    <div class="team-thumb"><img class="img-fullwidth" src="{{ team.image }}" alt="{{ team.title }}">
-                      <div class="team-overlay">
-                        <ul class="list-inline text-white font-12 mb-10">
-                          <li><i aria-hidden="true" class="fa fa-phone text-theme-color-2 mr-10"></i>Mob: {{ team.phone }}</li>
-                          <li><i aria-hidden="true" class="fa fa-envelope-o text-theme-color-2 mr-10"></i>Email: {{ team.mail }}</li>
-                        </ul>
-                        <ul class="styled-icons icon-theme-colored icon-circled icon-dark icon-sm mt-15 mb-0">
-                          <li><a href="{{ team.facebook }}"><i class="fa fa-facebook"></i></a></li>
-                          <li><a href="{{ team.google_plus }}"><i class="fa fa-google-plus"></i></a></li>
-                          <li><a href="{{ team.linked_in }}"><i class="fa fa-linkedin"></i></a></li>
-                          
-                        </ul>
-                        
-                      </div>
-                    </div>
-                    <div class="info">
-                      <h3 class="title text-theme-colored">{{ team.title }}</h3>
-                      <h6 style="font-weight: bold;;">{{ team.position }}</h6>
-                      <a href="#" class="btn btn-default btn-theme-colored btn-flat pull-left">Read More</a>
-                    </div>
-                  </div>
-                </div>
-                {% endfor %} 
-              </div>
-            </div>         
-          </div>
-        </div>
-      </div>
-    </section>-->
     <!--<section>
       <div class="container pb-40 pb-sm-60">
         <div class="section-content">

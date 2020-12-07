@@ -16,7 +16,7 @@ Border-bottom Skin
 .menuzord-menu > li.active > a,
 .menuzord-menu > li:hover > a{
 	color: #333;
-	border-bottom-color: #333;
+	border-bottom-color: #c26d28;
 }
 
 /* Hover state (dropdown items) */
