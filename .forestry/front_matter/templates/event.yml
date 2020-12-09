@@ -28,6 +28,13 @@ fields:
 - type: textarea
   name: subtitle
   label: Subtitle
+- name: location_coordonates
+  type: text
+  config:
+    required: false
+  label: GPS Coordonate
+  description: "(example: 13.456954,-16.700629)"
+  default: 13.456954,-16.700629
 - type: text
   name: location_address
   label: Location address
