@@ -39,3 +39,5 @@ fields:
 - type: text
   name: email
   label: Email
+pages:
+- _events/groundbreaking-ceremony-in-gambia.md
