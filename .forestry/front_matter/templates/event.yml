@@ -15,9 +15,15 @@ fields:
 - type: datetime
   name: start_date
   label: Start date
-- type: text
-  name: finish_date
-  label: Ending date
+- name: finish_date
+  type: datetime
+  label: Ending Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
 - type: textarea
   name: subtitle
   label: Subtitle
