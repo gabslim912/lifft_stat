@@ -92,13 +92,35 @@ layout: default_event
         </div>
         <div class="row mt-60">
           
-          <div class="col-md-12">
+          <div class="col-md-6">
             <h4 class="mt-0 line-bottom">Event Description</h4>
             <blockquote>
               <p>{{ page.content }}</p>
               <footer>Kebba JASSEY - Lead Person - <cite title="Source Title">Shelter For Life International</cite></footer>
             </blockquote>
           </div>
+          <div class="col-md-6">
+            <!-- Google Map HTML Codes -->
+            <div 
+              data-address="{{ page.location_country }}"
+              data-popupstring-id="#popupstring1"
+              class="map-canvas autoload-map"
+              data-mapstyle="style4"
+              data-height="300"
+              data-latlng="{{ page.location_coordonates }}"
+              data-title="{{ page.title }}"
+              data-zoom="12"
+              data-marker="/assets/images/map-marker4.png">
+            </div>
+
+            <div class="map-popupstring hidden" id="popupstring1">
+              <div class="text-center">
+                <h3>{{ page.title }}</h3>
+                <p>{{ page.location_country }}</p>
+              </div>
+            </div>
+          </div>
+          
         </div>
         <!--<div class="row mt-40">
           <div class="col-md-12">
