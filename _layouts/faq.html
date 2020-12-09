@@ -67,10 +67,28 @@ layout: default
                   <textarea name="message" class="form-control" required="" placeholder="Enter Question" rows="3"></textarea>
                 </div>
                 <div class="form-group">
+                  <div class="g-recaptcha" data-sitekey="6LcZz-8ZAAAAAC1sGgo2nGBBllScwtlIbu61VsUN" data-callback="recaptchaCallback"></div>
+                </div>
+                <div class="form-group">
                   <input name="form_botcheck" class="form-control" type="hidden" value="" />
-                  <button type="submit" class="btn btn-dark btn-theme-colored btn-lg mt-0">Send Message</button>
+                  <button id="my-form-button" type="submit" class="btn btn-dark btn-theme-colored btn-lg mt-0" disabled="true">Send Message</button>
                 </div>
               </form>
+
+              <script>
+                 /* function recaptchaCallback() {
+                      var btnSubmit = document.getElementById("my-form-button");
+                      if ( btnSubmit.classList.contains("hidden") ) {
+                          btnSubmit.classList.remove("hidden");
+                          btnSubmitclassList.add("show");
+                      }
+                  }*/
+
+                   function recaptchaCallback(){
+                       document.getElementById("my-form-button").disabled = false;
+                     }
+              </script>
+              
 
               <!-- Quick Contact Form Validation-->
               <script type="text/javascript">
