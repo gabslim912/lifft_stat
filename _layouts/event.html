@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_event
 ---
 <!-- Start main-content -->
 <div class="main-content">
@@ -27,60 +27,76 @@ layout: default
     <section>
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <ul>
-              <li>
-                <h5>Topic:</h5>
-                <p>{{ page.title }}</p>
-              </li>
-              <li>
-                <h5>Host:</h5>
-                <p>Shelter for life</p>
-              </li>
-              <li>
-                <h5>Location:</h5>
-                <p>{{ page.location_address }}, {{ page.location_town }}, {{ page.location_region }} {{ page.location_country }}</p>
-              </li>
-              <li>
-                <h5>Start Date:</h5>
-                <p>{{ page.start_date | date: "%b %d, %y" }}</p>
-              </li>
-              <li>
-                <h5>End Date:</h5>
-                <p>{{ page.finish_date | date: "%b %d, %y" }}</p>
-              </li>
-              <li>
-                <h5>Email:</h5>
-                <p>{{ page.email }}</p>
-              </li>
-              <li>
-                <h5>Tel:</h5>
-                <p>{{ page.phone }}</p>
-              </li>
-              <li>
-                <h5>Share:</h5>
-                <div class="styled-icons icon-sm icon-gray icon-circled">
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-instagram"></i></a>
-                  <a href="#"><i class="fa fa-google-plus"></i></a>
-                </div>
-              </li>
-            </ul>
+          <div class="col-md-5">
+            <div class="job-overview">
+              <!--<dl class="dl-horizontal">
+                <dt><i class="fa fa-calendar text-theme-colored mt-5 font-25"></i></dt>
+                <dd>
+                  <h3 class="mt-0">Date Posted:</h3>
+                  <p>{{ page.date | date: "%d" }} {{ page.date | date: "%b" }}, {{ page.date | date: "%y" }}</p>
+                </dd>
+              </dl>-->
+              <dl class="dl-horizontal">
+                <dt class="hidden-xs hidden-sm"><i class="fa fa-user text-theme-colored mt-5 font-25"></i></dt>
+                <dd>
+                  <h3 class="mt-0 line-bottom mb-15" style="font-weight: bold;">Host:</h3>
+                  <p style="font-size: 17px;">Shelter For Life International</p>
+                </dd>
+              </dl>
+              <dl class="dl-horizontal">
+                <dt class="hidden-xs hidden-sm"><i class="fa fa-calendar text-theme-colored mt-5 font-25"></i></dt>
+                <dd>
+                  <h3 class="mt-0 line-bottom mb-15" style="font-weight: bold;">Start Date:</h3>
+                  <p style="font-size: 17px;">{{ page.start_date | date: "%b %d, %y" }}</p>
+                </dd>
+              </dl>
+              <dl class="dl-horizontal">
+                <dt class="hidden-xs hidden-sm"><i class="fa fa-calendar text-theme-colored mt-5 font-25"></i></dt>
+                <dd>
+                  <h3 class="mt-0 line-bottom mb-15" style="font-weight: bold;">End Date:</h3>
+                  <p style="font-size: 17px;">{{ page.finish_date | date: "%b %d, %y" }}</p>
+                </dd>
+              </dl>
+              <dl class="dl-horizontal">
+                <dt class="hidden-xs hidden-sm"><i class="fa fa-map-marker text-theme-colored mt-5 font-25"></i></dt>
+                <dd>
+                  <h3 class="mt-0 line-bottom mb-15" style="font-weight: bold;">Location:</h3>
+                  <p style="font-size: 17px;">{{ page.location_country }}</p>
+                </dd>
+              </dl>
+              <dl class="dl-horizontal">
+                <dt class="hidden-xs hidden-sm"><i class="fa fa-envelope text-theme-colored mt-5 font-25"></i></dt>
+                <dd>
+                  <h3 class="mt-0 line-bottom mb-15" style="font-weight: bold;">Mail:</h3>
+                  <p style="font-size: 17px;">{{ page.email }}</p>
+                </dd>
+              </dl>
+              
+              <dl class="dl-horizontal">
+                <dt class="hidden-xs hidden-sm"><i class="fa fa-phone text-theme-colored mt-5 font-25"></i></dt>
+                <dd>
+                  <h3 class="mt-0 line-bottom mb-15" style="font-weight: bold;">Phone:</h3>
+                  <p style="font-size: 17px;">{{ page.phone }}</p>
+                </dd>
+              </dl>
+              <!--<a class="btn btn-dark mt-20" href="#">Apply Now</a>-->
+            </div>
+            
           </div>
-          <div class="col-md-8">
-            <img src="{{ page.image }}" alt="{{ page.title }}">
+          <div class="col-md-7">
+            <img src="{{ page.image }}" alt="{{ page.title }}" class="mb-30" style="width:-webkit-fill-available;">
+            <!-- ShareThis BEGIN -->
+                  <div class="sharethis-inline-share-buttons"></div>
+                  <!-- ShareThis END -->
           </div>
         </div>
         <div class="row mt-60">
-          <div class="col-md-6">
-            <h4 class="mt-0">Event Description</h4>
-            <p>{{ page.content }}</p>
-          </div>
-          <div class="col-md-6">
+          
+          <div class="col-md-12">
+            <h4 class="mt-0 line-bottom">Event Description</h4>
             <blockquote>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              <p>{{ page.content }}</p>
+              <footer>Kebba JASSEY - Lead Person - <cite title="Source Title">Shelter For Life International</cite></footer>
             </blockquote>
           </div>
         </div>
@@ -166,7 +182,7 @@ layout: default
       </div>
     </section>
 
-    <!-- Section: Registration Form -->
+    <!-- Section: Registration Form --
     <section class="divider parallax layer-overlay overlay-dark-7" data-bg-img="{{ page.image }}">
       <div class="container-fluid">
         <div class="section-title">
@@ -225,7 +241,7 @@ layout: default
                 </div>
               </div>
             </form>
-            <!-- Job Form Validation-->
+            
             <script type="text/javascript">
               $("#booking-form").validate({
                 submitHandler: function(form) {
@@ -252,7 +268,7 @@ layout: default
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
 
     <!--<section>
       <div class="container">
