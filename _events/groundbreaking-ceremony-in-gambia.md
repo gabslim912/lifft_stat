@@ -1,5 +1,5 @@
 ---
-layout: ''
+layout: 'event'
 title: Groundbreaking ceremony in Gambia
 image: "/uploads/gambia_road_consruction.jpg"
 start_date: 2020-12-15T00:00:00.000+00:00
