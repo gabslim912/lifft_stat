@@ -17,13 +17,13 @@ layout: default
 	              <div class="row">
 	                <div class="col-sm-4 pr-0 pr-sm-15">
 	                  <div class="thumb p-15">
-	                    <img class="img-fullwidth" src="{{ event.image }}" alt="{{ event.title }}">
+	                    <a href="{{ event.url }}"><img class="img-fullwidth" src="{{ event.image }}" alt="{{ event.title }}"></a>
 	                  </div>
 	                </div>
 	                <div class="col-sm-4 pl-0 pl-sm-15">
 	                  <div class="event-details p-15 mt-20">
-	                    <h4 class="mt-0 text-uppercase font-weight-500">{{ event.title }}</h4>
-	                    <p>{{ event.subtitle }}</p>
+	                    <a href="{{ event.url }}"><h3 class="mt-0 text-uppercase font-weight-600">{{ event.title }}</h3></a>
+	                    <a href="{{ event.url }}"><p>{{ event.subtitle }}</p></a>
 	                    <a href="{{ event.url }}" class="btn btn-flat btn-dark btn-theme-colored btn-sm mt-10">Details <i class="fa fa-angle-double-right"></i></a>
 	                  </div>
 	                </div>
