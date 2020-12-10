@@ -1,0 +1,29 @@
+<header id="header" class="header">
+    <div class="header-nav">
+      <div class="header-nav navbar-fixed-top header-dark navbar-white navbar-transparent navbar-sticky-animated animated-active">
+        <div class="container-fluid">
+          <nav id="menuzord-right" class="menuzord default"><a class="menuzord-brand pull-left flip xs-pull-left mt-15 " href="/" ><img src="{{ site.logo_colored }}" alt="{{ site.title }}" width="auto"></a>
+            <ul class="menuzord-menu">
+              <li ><a href="/" style="font-weight: bold;">Home</a></li>
+              <li ><a href="/about.html" style="font-weight: bold;">About</a></li>
+              <li ><a href="/contact.html" style="font-weight: bold;">Contact</a></li>
+              <li ><a href="/faq.html" style="font-weight: bold;">FAQ</a></li>
+              
+            </ul>
+            <script type="text/javascript">
+              const loc = location.href;
+
+              const menuItem = document.querySelectorAll('.menuzord-menu li a');
+
+              const menuLength = menuItem.length;
+              
+              for (let i = 0; i < menuLength; i++) {
+                if (menuItem[i].href === loc) {
+                  menuItem[i].parentNode.className = "active"
+                }
+              }
+            </script>
+          </nav>
+        </div>
+      </div>
+    </div>
