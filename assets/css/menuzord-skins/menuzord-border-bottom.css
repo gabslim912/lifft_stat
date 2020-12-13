@@ -56,14 +56,13 @@ Border-bottom Skin
 	border-bottom-color: #E9573F; 
 }
 /* orange */
-.menuzord.orange .menuzord-menu > li.active > a,
-.menuzord.orange .menuzord-menu > li > a.active, 
+.menuzord.orange .menuzord-menu > li.active > a, 
 .menuzord.orange .menuzord-menu > li:hover > a, 
+.menuzord.orange .menuzord-menu ul.dropdown li.active > a,
 .menuzord.orange .menuzord-menu ul.dropdown li:hover > a{ 
 	color: #ff670f; 
 }
 .menuzord.orange .menuzord-menu > li.active > a, 
-.menuzord.orange .menuzord-menu > li > a.active, 
 .menuzord.orange .menuzord-menu > li:hover > a{ 
 	border-bottom-color: #ff670f; 
 }
