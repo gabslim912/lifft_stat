@@ -139,3 +139,5 @@ fields:
   config:
     required: false
   label: Team Section Title
+pages:
+- about.md
