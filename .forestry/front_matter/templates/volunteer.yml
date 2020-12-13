@@ -5,27 +5,54 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: text
   name: title
-  label: title
-- type: text
-  name: subtitle
-  label: subtitle
+  label: Title
 - type: text
   name: permalink
-  label: permalink
+  label: Permalink
 - type: file
   name: parallax_image
-  label: parallax_image
-- type: text
-  name: description
-  label: description
-- type: datetime
-  name: date
-  label: date
-- type: text
-  name: lang
-  label: lang
-- type: text
-  name: ref
-  label: ref
+  label: Parallax Image
+- name: left_image
+  type: file
+  config:
+    maxSize: 64
+  label: Left Image
+  description: Image on the left of the volunteer form
+- name: volunteer_form_title
+  type: text
+  config:
+    required: false
+  label: Volunteer Form Title
+- name: first_name
+  type: text
+  config:
+    required: false
+  label: First Name
+- name: last_name
+  type: text
+  config:
+    required: false
+  label: Last Name
+- name: email
+  type: text
+  config:
+    required: false
+  label: Email
+- name: subject
+  type: text
+  config:
+    required: false
+  label: Subject
+- name: message
+  type: text
+  config:
+    required: false
+  label: Message
+- name: submit_button
+  type: text
+  config:
+    required: false
+  label: Submit Button
