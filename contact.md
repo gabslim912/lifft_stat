@@ -15,7 +15,7 @@ submit_button: Send your message
 form_link: https://formspree.io/f/mwkwqjkj
 our_office_section_title: Our Offices
 offices:
-- country: Senegal  
+- country: Senegal
   address: 178 Nema Complementaire, Ziguinchor
   phone: "(+221) 33 991 94 55"
   email: lifftcashewinfo@shelter.org
@@ -30,5 +30,6 @@ offices:
   phone: "(+245) 95 663 74 13"
   email: lifftcashewinfo@shelter.org
   image: "/uploads/bissau_flag.jpg"
+recaptcha_key: 6LcZz-8ZAAAAAC1sGgo2nGBBllScwtlIbu61VsUN
 
 ---
