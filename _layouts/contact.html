@@ -16,7 +16,7 @@ layout: default
           <div class="row">
             <div class="col-md-12 mb-20"> 
             <div class="separator">
-              <span class="font-27">GET IN TOUCH</span>
+              <span class="font-27">{{ page.subtitle }}</span>
             </div>
           </div>
           </div>
@@ -26,36 +26,36 @@ layout: default
             <div class="col-md-12">
    
               <!-- Contact Form -->
-              <form class="contact-form-transparent" action="https://formspree.io/f/mwkwqjkj" method="POST" id="my-form" target="_blank">
+              <form class="contact-form-transparent" action="{{ page.form_link }}" method="POST" id="my-form" target="_blank">
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" placeholder="Enter First Name"  name="first_name" required="" class="form-control">
+                      <input type="text" placeholder="{{ page.First_name }}"  name="first_name" required="" class="form-control">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" placeholder="Enter Last Name"  name="last_name" class="form-control">
+                      <input type="text" placeholder="{{ page.last_name }}"  name="last_name" class="form-control">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" placeholder="Enter Your Company Name"  name="company_name" class="form-control">
+                      <input type="text" placeholder="{{ page.company }}"  name="company_name" class="form-control">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="email" placeholder="Enter Email"  name="email" class="form-control required email">
+                      <input type="email" placeholder="{{ page.email }}"  name="email" class="form-control required email">
                     </div>
                   </div>
                   <div class="col-sm-12">
                     <div class="form-group">
-                      <input type="text" placeholder="Enter Subject"  name="subject" class="form-control required">
+                      <input type="text" placeholder="{{ page.subject }}"  name="subject" class="form-control required">
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <textarea rows="5" placeholder="Enter Message"  name="message" class="form-control required"></textarea>
+                  <textarea rows="5" placeholder="{{ page.message }}"  name="message" class="form-control required"></textarea>
                 </div>
                 <div class="row">
                   <div class="col-sm-6">
@@ -65,7 +65,7 @@ layout: default
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group text-center pull-right mb-0">
-                      <button id="my-form-button" class="btn btn-default btn-flat btn-xl btn-theme-colored pl-30 pr-30 font-25" style="height: 76px;" type="submit" disabled="true"><i class="fa fa-paper-plane pr-10"></i> Send your message</button>
+                      <button id="my-form-button" class="btn btn-default btn-flat btn-xl btn-theme-colored pl-30 pr-30 font-25" style="height: 76px;" type="submit" disabled="true"><i class="fa fa-paper-plane pr-10"></i> {{ page.submit_button }}</button>
                     </div>
                   </div>
                 </div>
@@ -143,36 +143,37 @@ layout: default
         <div class="row">
           <div class="col-md-12 mb-40"> 
             <div class="separator">
-              <span class="font-27">OUR OFFICES</span>
+              <span class="font-27 text-uppercase">{{ page.our_office_section_title }}</span>
             </div>
           </div>
+          {% for office in page.offices %}
           <div class="col-md-4">
             <div class="card effect__hover">
-              <div class="card__front layer-overlay overlay-custom-1 " style="background-image: url('/assets/img/senegal_flag.jpg'); background-position: center; /* Center the image */ background-repeat: no-repeat; /* Do not repeat the image */ background-size: cover; /* Resize the background image to cover the entire container */">
+              <div class="card__front layer-overlay overlay-custom-1 " style="background-image: url('{{ office.image }}'); background-position: center; /* Center the image */ background-repeat: no-repeat; /* Do not repeat the image */ background-size: cover; /* Resize the background image to cover the entire container */">
                   <div class="card__text">
                     <div class="display-table-parent">
                       <div class="display-table">
                         <div class="display-table-cell">
                           <div class="icon-box mb-0">
                             
-                            <h1 class="icon-box-title text-white" style="letter-spacing: 7px; font-size: 60px; font-weight: 700;">SENEGAL</h1>
+                            <h1 class="icon-box-title text-white text-uppercase" style="letter-spacing: 7px; font-size: 60px; font-weight: 700;">{{ office.country }}</h1>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                </div>
-              <div class="card__back layer-overlay overlay-custom-1 " style="background-image: url('/assets/img/senegal_flag.jpg'); background-position: center; /* Center the image */ background-repeat: no-repeat; /* Do not repeat the image */ background-size: cover; /* Resize the background image to cover the entire container */">
+              <div class="card__back layer-overlay overlay-custom-1 " style="background-image: url('{{ office.image }}'); background-position: center; /* Center the image */ background-repeat: no-repeat; /* Do not repeat the image */ background-size: cover; /* Resize the background image to cover the entire container */">
                 <div class="card__text">
                   <div class="display-table-parent p-30">
                       <div class="display-table">
                         <div class="display-table-cell">
-                          <h2 class="mb-20 text-white">Ziguinchor Office</h2>
+                          <h2 class="mb-20 text-white">{{ office.country }} Office</h2>
                           <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12">
                               <div class="icon-box left media bg-deep p-10 mb-10"> <a class="media-left pull-left" href="#"> <i class="pe-7s-map-2 text-theme-colored font-25"></i></a>
                                 <div class="media-body">
-                                  <p style="font-size: 14px;">{{ site.sn_address }}</p>
+                                  <p style="font-size: 14px;">{{ office.address }}</p>
                                 </div>
                               </div>
                             </div>
@@ -180,7 +181,7 @@ layout: default
                               <div class="icon-box left media bg-deep p-10 mb-10"> <a class="media-left pull-left" href="#"> <i class="pe-7s-call text-theme-colored font-25"></i></a>
                                 <div class="">
                                   
-                                  <p style="font-size: 14px; margin-bottom: 0px;">{{ site.tel1 }}</p>
+                                  <p style="font-size: 14px; margin-bottom: 0px;">{{ office.phone }}</p>
                                 </div>
                               </div>
                             </div>
@@ -188,7 +189,7 @@ layout: default
                               <div class="icon-box left media bg-deep p-10 mb-20"> <a class="media-left pull-left" href="#"> <i class="pe-7s-mail text-theme-colored font-25"></i></a>
                                 <div class="media-body">
                                   
-                                  <p style="font-size: 14px; margin-bottom: 0px;"><a href = "mailto: {{ site.email }}">{{ site.email }}</a></p>
+                                  <p style="font-size: 14px; margin-bottom: 0px;"><a href = "mailto: {{ site.email }}">{{ office.email }}</a></p>
                                 </div>
                               </div>
                             </div>
@@ -200,117 +201,8 @@ layout: default
               </div>
             </div><!-- /flip-box -->
           </div>
-          <div class="col-md-4">
-            <div class="card effect__hover">
-              <div class="card__front layer-overlay overlay-custom-1 " style="background-image: url('/assets/img/bissau_flag.jpg'); background-position: center; /* Center the image */ background-repeat: no-repeat; /* Do not repeat the image */ background-size: cover; /* Resize the background image to cover the entire container */" >
-                  <div class="card__text">
-                    <div class="display-table-parent">
-                      <div class="display-table">
-                        <div class="display-table-cell">
-                          <div class="icon-box mb-0">
-                            
-                            <h1 class="icon-box-title text-white" style="letter-spacing: 7px; font-size: 60px; font-weight: 700;">BISSAU</h1>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-               </div>
-              <div class="card__back
-              layer-overlay overlay-custom-1 " style="background-image: url('/assets/img/bissau_flag.jpg'); background-position: center; /* Center the image */ background-repeat: no-repeat; /* Do not repeat the image */ background-size: cover; /* Resize the background image to cover the entire container */" >
-                <div class="card__text">
-                  <div class="display-table-parent p-30">
-                      <div class="display-table">
-                        <div class="display-table-cell">
-                          <h2 class="mb-20 text-white">Bissau Office</h2>
-                          <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12">
-                              <div class="icon-box left media bg-deep p-10 mb-10"> <a class="media-left pull-left" href="#"> <i class="pe-7s-map-2 text-theme-colored font-25"></i></a>
-                                <div class="media-body">
-                                  <p style="font-size: 14px; margin-bottom: 0px;">{{ site.gb_address }}</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-12">
-                              <div class="icon-box left media bg-deep p-10 mb-10"> <a class="media-left pull-left" href="#"> <i class="pe-7s-call text-theme-colored font-25" ></i></a>
-                                <div class="media-body">
-                                  
-                                  <p style="font-size: 14px; margin-bottom: 0px;">{{ site.telgb }}</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-12">
-                              <div class="icon-box left media bg-deep p-10 mb-20"> <a class="media-left pull-left" href="#"> <i class="pe-7s-mail text-theme-colored font-25"></i></a>
-                                <div class="media-body">
-                                  
-                                  <p style="font-size: 14px; margin-bottom: 0px;"><a href = "mailto: {{ site.email }}">{{ site.email }}</a></p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- /flip-box -->
-          </div>
-          <div class="col-md-4">
-            <div class="card effect__hover">
-              <div class="card__front layer-overlay overlay-custom-1 " style="background-image: url('/assets/img/gambia_flag.jpg'); background-position: center; /* Center the image */ background-repeat: no-repeat; /* Do not repeat the image */ background-size: cover; /* Resize the background image to cover the entire container */">
-                  <div class="card__text">
-                    <div class="display-table-parent">
-                      <div class="display-table">
-                        <div class="display-table-cell">
-                          <div class="icon-box mb-0">
-                            <!--<a href="#" class="icon mb-0">
-                              <i class="text-white pe-7s-map-marker font-72"></i>
-                            </a>-->
-                            <h1 class="icon-box-title text-white" style="letter-spacing: 7px; font-size: 60px; font-weight: 700;">GAMBIA</h1>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-               </div>
-              <div class="card__back layer-overlay overlay-custom-1 " style="background-image: url('/assets/img/gambia_flag.jpg'); background-position: center; /* Center the image */ background-repeat: no-repeat; /* Do not repeat the image */ background-size: cover; /* Resize the background image to cover the entire container */">
-                <div class="card__text">
-                  <div class="display-table-parent p-30">
-                      <div class="display-table">
-                        <div class="display-table-cell">
-                          <h2 class="mb-20 text-white">Gambia Office</h2>
-                          <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12">
-                              <div class="icon-box left media bg-deep p-10 mb-10"> <a class="media-left pull-left" href="#"> <i class="pe-7s-map-2 text-theme-colored font-25"></i></a>
-                                <div class="media-body">
-                                  <p style="font-size: 14px; margin-bottom: 0px;">{{ site.gm_address }}</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-12">
-                              <div class="icon-box left media bg-deep p-10 mb-10"> <a class="media-left pull-left" href="#"> <i class="pe-7s-call text-theme-colored font-25"></i></a>
-                                <div class="media-body">
-                                  
-                                  <p style="font-size: 14px; margin-bottom: 0px;">{{ site.telgm }}</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-12">
-                              <div class="icon-box left media bg-deep p-10 mb-20"> <a class="media-left pull-left" href="#"> <i class="pe-7s-mail text-theme-colored font-25"></i></a>
-                                <div class="media-body">
-                                  
-                                  <p style="font-size: 14px; margin-bottom: 0px;"><a href = "mailto: {{ site.email }}">{{ site.email }}</a></p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- /flip-box -->
-          </div>
+          {% endfor %}
+         
         </div>
       </div>
     </section>
