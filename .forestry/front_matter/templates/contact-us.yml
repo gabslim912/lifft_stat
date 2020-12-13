@@ -82,3 +82,5 @@ fields:
     max: 6
     labelField: 
   label: Offices
+pages:
+- contact.md
