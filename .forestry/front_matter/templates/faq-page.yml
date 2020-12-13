@@ -1,0 +1,40 @@
+---
+label: FAQ Page
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: permalink
+  label: permalink
+- type: file
+  name: parallax_image
+  label: parallax_image
+- type: text
+  name: faq_form_title
+  label: faq_form_title
+- type: text
+  name: first_name
+  label: first_name
+- type: text
+  name: last_name
+  label: last_name
+- type: text
+  name: company
+  label: company
+- type: text
+  name: email
+  label: email
+- type: text
+  name: subject
+  label: subject
+- type: text
+  name: message
+  label: message
+- type: text
+  name: submit_button
+  label: submit_button
