@@ -43,7 +43,13 @@ typed_text_section:
 news_section_title: Latest News
 statistics_section_image: "/uploads/cashew_141-1.jpg"
 statistics:
-  title: TONS OF CASHEW
+- title: FAMILIES HELPED
+  value: 22435
+- title: KM OF ROADS BUILT
+  value: 66
+- title: PEOPLES TRAINED
+  value: 2100
+- title: TONS OF CASHEW
   value: 10000
 
 ---
