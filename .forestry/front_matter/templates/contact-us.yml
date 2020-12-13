@@ -5,54 +5,80 @@ fields:
 - type: text
   name: layout
   label: layout
-- type: text
-  name: title
-  label: title
-- type: text
-  name: subtitle
-  label: subtitle
+  hidden: true
 - type: text
   name: permalink
   label: permalink
 - type: file
   name: parallax_image
-  label: parallax_image
+  label: Parallax Image
+  default: "/uploads/cashew_1.jpg"
 - type: text
-  name: description
-  label: description
-- type: datetime
-  name: date
-  label: date
+  name: title
+  label: Title
 - type: text
-  name: name
-  label: name
+  name: subtitle
+  label: Contact Form Title
 - type: text
-  name: name_ph
-  label: name_ph
+  name: First_name
+  label: First Name
+- type: text
+  name: last_name
+  label: Last Name
+- type: text
+  name: company
+  label: Company
 - type: text
   name: email
-  label: email
-- type: text
-  name: email_ph
-  label: email_ph
+  label: Email
 - type: text
   name: subject
-  label: subject
-- type: text
-  name: subject_ph
-  label: subject_ph
+  label: Subject
 - type: text
   name: message
-  label: message
+  label: Message
 - type: text
-  name: message_ph
-  label: message_ph
-- type: text
-  name: submit_button_title
-  label: submit_button_title
-- type: text
-  name: submit_ph
-  label: submit_ph
+  name: submit_button
+  label: Submit Button
 - type: text
   name: form_link
-  label: form_link
+  label: Form link
+- name: our_office_section_title
+  type: text
+  config:
+    required: false
+  label: Our office section title
+  default: Our Offices
+- name: offices
+  type: field_group_list
+  fields:
+  - name: country
+    type: text
+    config:
+      required: false
+    label: Country
+  - name: address
+    type: text
+    config:
+      required: false
+    label: Address
+  - name: phone
+    type: text
+    config:
+      required: false
+    label: Phone Number
+  - name: email
+    type: text
+    config:
+      required: false
+    label: Email
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+  config:
+    min: 3
+    max: 6
+    labelField: 
+  label: Offices
