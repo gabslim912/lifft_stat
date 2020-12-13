@@ -17,4 +17,5 @@ fields:
   label: Parallax Image
 pages:
 - donors.md
+- indicators.md
 - stories.md
