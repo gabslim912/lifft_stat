@@ -20,6 +20,9 @@ fields:
   name: subtitle
   label: Contact Form Title
 - type: text
+  name: form_link
+  label: Form link
+- type: text
   name: First_name
   label: First Name
 - type: text
@@ -40,9 +43,11 @@ fields:
 - type: text
   name: submit_button
   label: Submit Button
-- type: text
-  name: form_link
-  label: Form link
+- name: recaptcha_key
+  type: text
+  config:
+    required: false
+  label: Recaptcha Key
 - name: our_office_section_title
   type: text
   config:
