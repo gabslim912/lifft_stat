@@ -4,7 +4,7 @@ _site
 .jekyll-metadata
 vendor
 
-/assets/ajax-load/
+assets/ajax-load
 node_modules/
 /assets/js/classycountdown/doc.html
 /assets/js/classycountdown/index.html
