@@ -5,36 +5,47 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: text
   name: title
-  label: title
+  label: Title
 - type: text
   name: permalink
-  label: permalink
+  label: Permalink
 - type: file
   name: parallax_image
-  label: parallax_image
+  label: Parallax Image
+- name: form_link
+  type: text
+  config:
+    required: false
+  label: Form Link
 - type: text
   name: faq_form_title
-  label: faq_form_title
+  label: Form Title
 - type: text
   name: first_name
-  label: first_name
+  label: First Name
 - type: text
   name: last_name
-  label: last_name
+  label: Last Name
 - type: text
   name: company
-  label: company
+  label: Company
 - type: text
   name: email
-  label: email
+  label: Email
 - type: text
   name: subject
-  label: subject
+  label: Subject
 - type: text
   name: message
-  label: message
+  label: Message
+- name: recaptcha_key
+  type: text
+  config:
+    required: false
+  label: Recaptcha Key
 - type: text
   name: submit_button
-  label: submit_button
+  label: Submit Button
