@@ -16,6 +16,7 @@ fields:
   name: parallax_image
   label: Parallax Image
 pages:
+- blog.md
 - donors.md
 - indicators.md
 - stories.md
