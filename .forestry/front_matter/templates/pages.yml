@@ -8,15 +8,12 @@ fields:
   hidden: true
 - type: text
   name: title
-  label: title
-- type: text
-  name: subtitle
-  label: subtitle
+  label: Title
 - type: text
   name: permalink
-  label: permalink
+  label: Permalink
 - type: file
   name: parallax_image
-  label: parallax_image
+  label: Parallax Image
 pages:
 - stories.md
