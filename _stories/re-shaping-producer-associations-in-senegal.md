@@ -1,5 +1,5 @@
 ---
-layout: story
+layout: ''
 title: 'Re-shaping producer associations in Senegal '
 image: "/uploads/fig-3-story.png"
 first_name: Aliou
@@ -9,7 +9,7 @@ subtitle: In July 2020, twenty members of the Cooperative of Producers of Cashew
   Coumbacara, in Senegal, were trained in Cooperative Management and Agricultural
   Entrepreneurship, as part of the cashew value chain capacity-building efforts of
   the LIFFT-Cashew Project
-date: 2020-11-20 00:00:00 +0000
+date: 2020-11-20T00:00:00.000+00:00
 
 ---
 In July 2020, twenty members of the Cooperative of Producers of Cashew of Coumbacara, in Senegal, were trained in Cooperative Management and Agricultural Entrepreneurship, as part of the cashew value chain capacity-building efforts of the LIFFT-Cashew Project (Linking Finance and Farms to Cashews, operated by Shelter for Life International. Capacity-building training helps to prepare many farmers, like Aliou, to plan for the coming years.
