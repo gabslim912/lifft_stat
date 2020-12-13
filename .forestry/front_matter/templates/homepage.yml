@@ -98,38 +98,43 @@ fields:
   config:
     required: false
   label: News Section Title
-- name: statistics_section_image
-  type: file
-  config:
-    maxSize: 64
-  label: Statistics Section Image
-- name: statistics
-  type: field_group_list
+- name: statistics_section
+  type: field_group
+  config: {}
   fields:
-  - name: title
-    type: text
+  - name: image
+    type: file
     config:
-      required: false
-    label: Title
-  - name: value
-    type: number
-    label: Value
-    description: ''
-    default: 0
-    required: true
+      maxSize: 64
+    label: Image
+  - name: statistics
+    type: field_group_list
+    fields:
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Title
+    - name: value
+      type: number
+      label: Value
+      description: ''
+      default: 0
+      required: true
+      config:
+        min: 
+        max: 
+        step: 
+    - name: icon_code
+      type: text
+      config:
+        required: false
+      label: Icon Code
     config:
       min: 
       max: 
-      step: 
-  - name: icon_code
-    type: text
-    config:
-      required: false
-    label: Icon Code
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: Statistics
+      labelField: 
+    label: Statistics
+  label: Statistics Section
 pages:
 - index.md
