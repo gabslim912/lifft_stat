@@ -26,6 +26,11 @@ fields:
   config:
     required: false
   label: Volunteer Form Title
+- name: form_link
+  type: text
+  config:
+    required: false
+  label: Form Link
 - name: first_name
   type: text
   config:
@@ -51,6 +56,11 @@ fields:
   config:
     required: false
   label: Message
+- name: recaptcha_key
+  type: text
+  config:
+    required: false
+  label: Recaptcha Key
 - name: submit_button
   type: text
   config:
