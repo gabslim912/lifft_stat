@@ -38,40 +38,40 @@ layout: default
           </div>
           <div class="col-md-4">
             <div class="widget border-1px p-30">
-              <h5 class="widget-title line-bottom">ASK A QUESTION </h5>
+              <h2 class="widget-title line-bottom">{{ page.faq_form_title }} </h2>
               <form class="quick-contact-form" action="https://formspree.io/f/mdopdvkk" method="POST" target="_blank">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input name="first_name" class="form-control" type="text" required="" placeholder="First name">
+                      <input name="first_name" class="form-control" type="text" required="" placeholder="{{ page.first_name }}">
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input name="last_name" class="form-control" type="text" required="" placeholder="Last name">
+                      <input name="last_name" class="form-control" type="text" required="" placeholder="{{ page.last_name }}">
                     </div>
                   </div>
                 </div>
                
                 
                 <div class="form-group">
-                  <input name="company" class="form-control" type="text" required="" placeholder="Company">
+                  <input name="company" class="form-control" type="text" required="" placeholder="{{ page.company }}">
                 </div>
                 <div class="form-group">
-                  <input name="subject" class="form-control" type="text" required="" placeholder="Subject">
+                  <input name="subject" class="form-control" type="text" required="" placeholder="{{ page.subject }}">
                 </div>
                 <div class="form-group">
-                  <input name="email" class="form-control" type="email" required="" placeholder="Email">
+                  <input name="email" class="form-control" type="email" required="" placeholder="{{ page.email }}">
                 </div>
                 <div class="form-group">
-                  <textarea name="message" class="form-control" required="" placeholder="Enter Question" rows="3"></textarea>
+                  <textarea name="message" class="form-control" required="" placeholder="{{ page.message }}" rows="3"></textarea>
                 </div>
                 <div class="form-group">
                   <div class="g-recaptcha" data-sitekey="6LcZz-8ZAAAAAC1sGgo2nGBBllScwtlIbu61VsUN" data-callback="recaptchaCallback"></div>
                 </div>
                 <div class="form-group">
                   <input name="form_botcheck" class="form-control" type="hidden" value="" />
-                  <button id="my-form-button" type="submit" class="btn btn-dark btn-theme-colored btn-lg mt-0" disabled="true">Send Message</button>
+                  <button id="my-form-button" type="submit" class="btn btn-dark btn-theme-colored btn-lg mt-0" disabled="true">{{ page.submit_button }}</button>
                 </div>
               </form>
 
