@@ -121,6 +121,11 @@ fields:
       min: 
       max: 
       step: 
+  - name: icon_code
+    type: text
+    config:
+      required: false
+    label: Icon Code
   config:
     min: 
     max: 
