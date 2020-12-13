@@ -5,6 +5,121 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: text
   name: title
-  label: title
+  label: Title
+- name: slides
+  type: field_group_list
+  fields:
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+  - name: first_title
+    type: text
+    config:
+      required: false
+    label: First Title
+  - name: second_title
+    type: text
+    config:
+      required: false
+    label: Second Title
+  - name: button_title
+    type: text
+    config:
+      required: false
+    label: Button Title
+  - name: button_link
+    type: text
+    config:
+      required: false
+    label: Button Link
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Slides
+- name: second_section
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: main_content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Main Content
+  - name: button_title
+    type: text
+    config:
+      required: false
+    label: Button Title
+  - name: button_link
+    type: text
+    config:
+      required: false
+    label: Button link
+  - name: section_image
+    type: file
+    config:
+      maxSize: 64
+    label: Section Image
+  label: Second Section
+- name: typed_text_section
+  type: field_group
+  config: {}
+  fields:
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Background Image
+  - name: text_items
+    type: list
+    config:
+      use_select: false
+      min: 
+      max: 
+    label: Text Items
+  label: Typed Text Section
+- name: news_section_title
+  type: text
+  config:
+    required: false
+  label: News Section Title
+- name: statistics_section_image
+  type: file
+  config:
+    maxSize: 64
+  label: Statistics Section Image
+- name: statistics
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: value
+    type: number
+    label: Value
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  label: Statistics
