@@ -47,14 +47,22 @@ statistics_section:
   - title: FAMILIES HELPED
     value: 22435
     icon_code: pe-7s-smile
+    duration: 2000
+    delay: 0.3s
   - title: KM OF ROADS BUILT
     value: 66
     icon_code: pe-7s-rocket
+    duration: 2500
+    delay: 0.4s
   - title: PEOPLES TRAINED
     value: 2100
     icon_code: pe-7s-add-user
+    duration: 3000
+    delay: 0.5s
   - title: TONS OF CASHEW
     value: 10000
     icon_code: pe-7s-global
+    duration: 3500
+    delay: 0.6s
 
 ---
