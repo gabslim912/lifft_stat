@@ -89,6 +89,11 @@ fields:
       config:
         maxSize: 64
       label: Image
+    - name: icon_code
+      type: text
+      config:
+        required: false
+      label: Icon Code
     label: First Box
   - name: second_box
     type: field_group
@@ -113,6 +118,11 @@ fields:
       config:
         maxSize: 64
       label: Image
+    - name: icon_code
+      type: text
+      config:
+        required: false
+      label: Icon Code
     label: Second Box
   - name: third_box
     type: field_group
@@ -137,6 +147,11 @@ fields:
       config:
         maxSize: 64
       label: Image
+    - name: icon_code
+      type: text
+      config:
+        required: false
+      label: Icon Code
     label: Third Box
   label: Third Section
 - name: team_section_title
