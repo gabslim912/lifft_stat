@@ -4,37 +4,13 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
+- type: heading
+  label: MODIFY THE MAIN PAGES
 - type: jekyll-pages
   label: Pages
   create: all
-- type: directory
-  path: _indicators
-  label: Indicators
-  create: all
-  match: "**/*"
-  templates:
-  - indicator
-- type: directory
-  path: _donors
-  label: Donors
-  create: all
-  match: "**/*"
-  templates:
-  - donor
-- type: directory
-  path: _jobs
-  label: Jobs
-  create: all
-  match: "**/*"
-  templates:
-  - job
-- type: directory
-  path: _faqs
-  label: Faqs
-  create: all
-  match: "**/*"
-  templates:
-  - faq
+- type: heading
+  label: WHAT WE DO
 - type: directory
   path: _teams
   label: Teams
@@ -43,12 +19,42 @@ sections:
   templates:
   - team
 - type: directory
+  path: _donors
+  label: Donors
+  create: all
+  match: "**/*"
+  templates:
+  - donor
+- type: directory
+  path: _faqs
+  label: Faqs
+  create: all
+  match: "**/*"
+  templates:
+  - faq
+- type: heading
+  label: IMPACT
+- type: directory
+  path: _indicators
+  label: Indicators
+  create: all
+  match: "**/*"
+  templates:
+  - indicator
+- type: directory
   path: _stories
   label: Stories
   create: all
   match: "**/*"
   templates:
   - story
+- type: heading
+  label: NEWS AND EVENTS
+- type: jekyll-posts
+  label: Blog Posts
+  create: all
+  templates:
+  - post
 - type: directory
   path: _events
   label: Events
@@ -57,24 +63,28 @@ sections:
   templates:
   - event
 - type: directory
-  path: _publications
-  label: Publications
-  create: all
-  match: "**/*"
-  templates:
-  - publication
-- type: directory
   path: _preleases
   label: Press releases
   create: all
   match: "**/*"
   templates:
   - press
-- type: jekyll-posts
-  label: Blog Posts
+- type: directory
+  path: _publications
+  label: Publications
   create: all
+  match: "**/*"
   templates:
-  - post
+  - publication
+- type: heading
+  label: GET INVOLVED
+- type: directory
+  path: _jobs
+  label: Jobs
+  create: all
+  match: "**/*"
+  templates:
+  - job
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
