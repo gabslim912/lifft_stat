@@ -41,12 +41,14 @@ third_section:
       the regional cashew value chain, leaving many farmers without economic opportunities
       and stagnating market infrastructure and financial services.
     image: "/uploads/cashew_2-2.jpg"
+    icon_code: pe-7s-pin
   second_box:
     title: THE SOLUTION
     text_content: The LIFFT-Cashew Project strengthens the cashew value chain by improving
       value chain linkages, and enhancing production and trade in local and international
       markets.
     image: "/uploads/cashew_27-2.jpg"
+    icon_code: pe-7s-check
   third_box:
     title: PROJECT GOALS
     text_content: The LIFFT-Cashew project will create durable trade infrastructure,
@@ -56,5 +58,6 @@ third_section:
       a result, the program will benefit smallholder farmers, a range of processors,
       and a variety of other businesses along the cashew value chain.
     image: "/uploads/cashew_141-4.jpg"
+    icon_code: pe-7s-rocket
 
 ---
