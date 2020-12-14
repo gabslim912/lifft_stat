@@ -55,5 +55,20 @@ statistics:
 - title: TONS OF CASHEW
   value: 10000
   icon_code: pe-7s-global
+statistics_section:
+  image: "/uploads/cashew_141-3.jpg"
+  statistics:
+  - title: FAMILIES HELPED
+    value: 22435
+    icon_code: pe-7s-smile
+  - title: KM OF ROADS BUILT
+    value: 66
+    icon_code: pe-7s-rocket
+  - title: PEOPLES TRAINED
+    value: 2100
+    icon_code: pe-7s-add-user
+  - title: TONS OF CASHEW
+    value: 10000
+    icon_code: pe-7s-global
 
 ---
