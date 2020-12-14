@@ -55,5 +55,32 @@ third_box:
     of other businesses along the cashew value chain.
   image: "/uploads/cashew_141-2.jpg"
 team_section_title: Meet Our Team
+third_section:
+  title: 'OUR WORK: Linking Infrastructure, Finance, and Farms to Cashew<'
+  first_box:
+    title: THE CHALLENGE
+    text_content: The SeGaBi cashew production zone of West Africa encompasses parts
+      of the Gambia, the Casamance region of Senegal, and most of Guinea-Bissau. This
+      agro-ecological zone produces over 222,000 metric tons of raw cashew nut annually,
+      however, only 1.2% of raw cashew nuts produced are processed locally, and most
+      are sent for processing in other countries such as India and Vietnam. This weakens
+      the regional cashew value chain, leaving many farmers without economic opportunities
+      and stagnating market infrastructure and financial services.
+    image: "/uploads/cashew_2-2.jpg"
+  second_box:
+    title: THE SOLUTION
+    text_content: The LIFFT-Cashew Project strengthens the cashew value chain by improving
+      value chain linkages, and enhancing production and trade in local and international
+      markets.
+    image: "/uploads/cashew_27-2.jpg"
+  third_box:
+    title: PROJECT GOALS
+    text_content: The LIFFT-Cashew project will create durable trade infrastructure,
+      increase access to financial services, organize and train smallholder farmers
+      to increase production and bargaining power, and build the capacity of local
+      processors to add value to kernels in the SeGaBi cashew production zone. As
+      a result, the program will benefit smallholder farmers, a range of processors,
+      and a variety of other businesses along the cashew value chain.
+    image: "/uploads/cashew_141-4.jpg"
 
 ---
