@@ -130,16 +130,6 @@ fields:
       config:
         required: false
       label: Icon Code
-    - name: delay
-      type: number
-      label: Delay
-      description: ''
-      default: 0
-      required: true
-      config:
-        min: 
-        max: 
-        step: 
     - name: duration
       type: number
       label: Duration
@@ -150,6 +140,11 @@ fields:
         min: 
         max: 
         step: 
+    - name: delay
+      type: text
+      config:
+        required: false
+      label: Delay
     config:
       min: 
       max: 
