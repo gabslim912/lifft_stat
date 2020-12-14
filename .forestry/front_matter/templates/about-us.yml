@@ -57,12 +57,7 @@ fields:
         format: markdown
     label: Test Content
   label: Second Section
-- name: third_section_title
-  type: text
-  config:
-    required: false
-  label: Third Section Title
-- name: first_box
+- name: third_section
   type: field_group
   config: {}
   fields:
@@ -71,69 +66,79 @@ fields:
     config:
       required: false
     label: Title
-  - name: text_content
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: Text Content
-  - name: image
-    type: file
-    config:
-      maxSize: 64
-    label: Image
-  label: 3rd Section - First box
-- name: second_box
-  type: field_group
-  config: {}
-  fields:
-  - name: title
-    type: text
-    config:
-      required: false
-    label: Title
-  - name: text_content
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: Text Content
-  - name: image
-    type: file
-    config:
-      maxSize: 64
-    label: Image
-  label: 3rd Section - Second Box
-- name: third_box
-  type: field_group
-  config: {}
-  fields:
-  - name: title
-    type: text
-    config:
-      required: false
-    label: Title
-  - name: text_content
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: Text content
-  - name: image
-    type: file
-    config:
-      maxSize: 64
-    label: Image
-  label: 3rd Section - Third Box
+  - name: first_box
+    type: field_group
+    config: {}
+    fields:
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Title
+    - name: text_content
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Text Content
+    - name: image
+      type: file
+      config:
+        maxSize: 64
+      label: Image
+    label: First Box
+  - name: second_box
+    type: field_group
+    config: {}
+    fields:
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Title
+    - name: text_content
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Text Content
+    - name: image
+      type: file
+      config:
+        maxSize: 64
+      label: Image
+    label: Second Box
+  - name: third_box
+    type: field_group
+    config: {}
+    fields:
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Title
+    - name: text_content
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Text Content
+    - name: image
+      type: file
+      config:
+        maxSize: 64
+      label: Image
+    label: Third Box
+  label: Third Section
 - name: team_section_title
   type: text
   config:
