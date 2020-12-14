@@ -452,7 +452,9 @@ layout: default_1
         </div>
       </div>
     </section>  -->
-    <section class="divider parallax layer-overlay overlay-dark-6" data-bg-img="/assets/img/cashew_141.jpg" data-parallax-ratio="0.2">
+    {% assign stats = page.statistics_section %}
+    {% assign statistics = stats.statistics %}
+    <section class="divider parallax layer-overlay overlay-dark-6" data-bg-img="{{ stats.image }}" data-parallax-ratio="0.2">
       <div class="container pt-90 pb-90">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50 wow fadeInLeft " data-wow-duration="1s" data-wow-delay="0.3s">

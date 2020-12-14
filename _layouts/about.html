@@ -49,12 +49,14 @@ layout: default
 	        <div class="row">
 	          <div class="col-md-12"> 
 	            <div class="heading-line-bottom">
-	              <h1 class="heading-title">OUR WORK: Linking Infrastructure, Finance, and Farms to Cashew</h1>
+            {% assign third = page.third_section %}
+	              <h1 class="heading-title">{{ third.title }}</h1>
 	            </div> 
 	          </div>
-	          <div class="col-md-6 p-xs-15">
+            {% assign first_box = third.first_box %}
+            <div class="col-md-6 p-xs-15">
 	            <div class="card effect__hover">
-	              <div class="card__front layer-overlay overlay-grey" data-bg-img="/assets/img/cashew_2.jpg">
+	              <div class="card__front layer-overlay overlay-grey" data-bg-img="{{ first_box.image }}">
 	                  <div class="card__text">
 	                    <div class="display-table-parent">
 	                      <div class="display-table">
@@ -63,20 +65,20 @@ layout: default
 	                            <a href="#" class="icon mb-0">
 	                              <i class="text-white pe-7s-pin font-72"></i>
 	                            </a>
-	                            <h1 class="icon-box-title text-white" style="font-weight: bolder;color: white;">THE CHALLENGE</h1>
+	                            <h1 class="icon-box-title text-white" style="font-weight: bolder;color: white;">{{ first_box.title }}</h1>
 	                          </div>
 	                        </div>
 	                      </div>
 	                    </div>
 	                  </div>
 	               </div>
-	              <div class="card__back layer-overlay overlay-dark"  data-bg-img="/assets/img/cashew_2.jpg" >
+	              <div class="card__back layer-overlay overlay-dark"  data-bg-img="{{ first_box.image }}" >
 	                <div class="card__text">
 	                  <div class="display-table-parent pl-20 pr-20 pt-10">
 	                      <div class="display-table">
 	                        <div class="display-table-cell">
-	                          <h3 class="text-white line-bottom pull-left font-28">THE CHALLENGE</h3>
-	                          <p class="text-white pull-left" style="font-size: 16px; text-align: justify;" >The SeGaBi cashew production zone of West Africa encompasses parts of the Gambia, the Casamance region of Senegal, and most of Guinea-Bissau. This agro-ecological zone produces over 222,000 metric tons of raw cashew nut annually, however, only 1.2% of raw cashew nuts produced are processed locally, and most are sent for processing in other countries such as India and Vietnam. This weakens the regional cashew value chain, leaving many farmers without economic opportunities and stagnating market infrastructure and financial services.</p>
+	                          <h3 class="text-white line-bottom pull-left font-28">{{ first_box.title }}</h3>
+	                          <p class="text-white pull-left" style="font-size: 16px; text-align: justify;" >{{ first_box.text_content }}</p>
 	                        </div>
 	                      </div>
 	                  </div>
@@ -84,9 +86,12 @@ layout: default
 	              </div>
 	            </div><!-- /flip-box -->
 	          </div>
-	          <div class="col-md-6 p-xs-15">
+
+
+            {% assign second_box = third.second_box %}
+            <div class="col-md-6 p-xs-15">
 	            <div class="card effect__hover">
-	              <div class="card__front layer-overlay overlay-grey"  data-bg-img="/assets/img/cashew_27.jpg" >
+	              <div class="card__front layer-overlay overlay-grey"  data-bg-img="{{ second_box.image }}" >
 	                  <div class="card__text">
 	                    <div class="display-table-parent">
 	                      <div class="display-table">
@@ -95,21 +100,21 @@ layout: default
 	                            <a href="#" class="icon mb-0">
 	                              <i class="text-white pe-7s-check font-72"></i>
 	                            </a>
-	                            <h1 class="icon-box-title text-white" style="font-weight: bolder;color: white;">THE SOLUTION</h1>
+	                            <h1 class="icon-box-title text-white" style="font-weight: bolder;color: white;">{{ second_box.title }}</h1>
 	                          </div>
 	                        </div>
 	                      </div>
 	                    </div>
 	                  </div>
 	               </div>
-	              <div class="card__back layer-overlay overlay-dark"  data-bg-img="/assets/img/cashew_27.jpg" >
+	              <div class="card__back layer-overlay overlay-dark"  data-bg-img="{{ second_box.image }}" >
 	                <div class="card__text">
 	                  <div class="display-table-parent p-30">
 	                      <div class="display-table">
 	                        <div class="display-table-cell">
-	                            <h3 class="text-white line-bottom pull-left font-28">THE SOLUTION</h3>
+	                            <h3 class="text-white line-bottom pull-left font-28">{{ second_box.title }}</h3>
 	                            
-	                            <p class="text-white pull-left" style="font-size: 16px; text-align: justify;" >The LIFFT-Cashew Project strengthens the cashew value chain by improving value chain linkages, and enhancing production and trade in local and international markets.</p>
+	                            <p class="text-white pull-left" style="font-size: 16px; text-align: justify;" >{{ second_box.text_content }}</p>
 	                        </div>
 	                      </div>
 	                  </div>
@@ -117,9 +122,11 @@ layout: default
 	              </div>
 	            </div><!-- /flip-box -->
 	          </div>
+
+            {% assign third_box = third.third_box %}
 	          <div class="col-md-12" style="margin-top: 30px;">
 	            <div class="card effect__hover">
-	              <div class="card__front layer-overlay overlay-grey"  data-bg-img="/assets/img/cashew_141.jpg">
+	              <div class="card__front layer-overlay overlay-grey"  data-bg-img="{{ third_box.image }}">
 	                  <div class="card__text">
 	                    <div class="display-table-parent">
 	                      <div class="display-table">
@@ -128,20 +135,20 @@ layout: default
 	                            <a href="#" class="icon mb-0">
 	                              <i class="pe-7s-rocket font-72" style="color: white;"></i>
 	                            </a>
-	                            <h1 class="icon-box-title text-white" style="font-weight: bolder;color: white;">PROJECT GOALS</h1>
+	                            <h1 class="icon-box-title text-white" style="font-weight: bolder;color: white;">{{ third_box.title }}</h1>
 	                          </div>
 	                        </div>
 	                      </div>
 	                    </div>
 	                  </div>
 	               </div>
-	              <div class="card__back layer-overlay overlay-dark"  data-bg-img="/assets/img/cashew_141.jpg" >
+	              <div class="card__back layer-overlay overlay-dark"  data-bg-img="{{ third_box.image }}" >
 	                <div class="card__text">
 	                  <div class="display-table-parent p-30">
 	                      <div class="display-table">
 	                        <div class="display-table-cell">
-	                          <h3 class="text-white line-bottom pull-left font-28">PROJECT GOALS</h3>
-	                          <p class="text-white pull-left" style="font-size: 16px; text-align: justify;" > The LIFFT-Cashew project will create durable trade infrastructure, increase access to financial services, organize and train smallholder farmers to increase production and bargaining power, and build the capacity of local processors to add value to kernels in the SeGaBi cashew production zone. As a result, the program will benefit smallholder farmers, a range of processors, and a variety of other businesses along the cashew value chain.</p>
+	                          <h3 class="text-white line-bottom pull-left font-28">{{ third_box.title }}</h3>
+	                          <p class="text-white pull-left" style="font-size: 16px; text-align: justify;" >{{ third_box.text_content }}</p>
 	                        </div>
 	                      </div>
 	                  </div>
