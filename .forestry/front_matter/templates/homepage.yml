@@ -130,6 +130,26 @@ fields:
       config:
         required: false
       label: Icon Code
+    - name: delay
+      type: number
+      label: Delay
+      description: ''
+      default: 0
+      required: true
+      config:
+        min: 
+        max: 
+        step: 
+    - name: duration
+      type: number
+      label: Duration
+      description: ''
+      default: 0
+      required: true
+      config:
+        min: 
+        max: 
+        step: 
     config:
       min: 
       max: 
