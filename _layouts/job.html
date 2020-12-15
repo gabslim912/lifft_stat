@@ -90,7 +90,7 @@ layout: default
         <div class="row">
           <div class="col-md-6 col-md-offset-3 bg-lightest-transparent p-30 pt-10">
             <h1 class="text-center text-theme-colored mb-20">Apply Now</h1>
-            <form action="https://formspree.io/f/mvovqnoy" method="POST" enctype="multipart/form-data" target="_blank">
+            <form action="https://formspree.io/f/mvovqnoy" method="POST" id="my-form" target="_blank" enctype="multipart/form-data">
               <div class="row">
                 <div class="col-sm-6 col-xs-12">
                   <div class="form-group">
@@ -116,40 +116,88 @@ layout: default
                 <label>Message <small>*</small></label>
                 <textarea name="message" class="form-control required" rows="5" placeholder="Your cover letter/message sent to the employer"></textarea>
               </div>-->
-              <div class="form-group ">
-                <label class="text-white">Upload your resume here</label>
-                <input class="btn btn-default btn-theme-colored btn-flat btn-sm" name="upload" type="file" >
-                <!--<small>Maximum upload file size: 12 MB</small>-->
+              <div class="col-sm-6 col-xs-12 mt-15 mb-15 pl-0">
+                <div class="form-group ">
+                  <div class="g-recaptcha" data-sitekey="6LcZz-8ZAAAAAC1sGgo2nGBBllScwtlIbu61VsUN" data-callback="recaptchaCallback"></div>
+                  <!--<small>Maximum upload file size: 12 MB</small>-->
+                </div>
               </div>
+              <div class="col-sm-6 col-xs-12">
+                <div class="form-group ml-0 pl-0">
+                  <label class="text-white">Upload your resume here</label>
+                  <input class="btn btn-default btn-theme-colored btn-flat btn-sm" name="upload" type="file" >
+                  <!--<small>Maximum upload file size: 12 MB</small>-->
+                </div>
+              </div>
+              
               <div class="form-group">
                
-                <button type="submit" class="btn btn-block btn-dark btn-theme-colored btn-sm mt-20 pt-10 pb-10">Apply Now</button>
+                <button id="my-form-button" type="submit" class="btn btn-block btn-dark btn-theme-colored btn-sm mt-20 pt-10 pb-10" disabled="true">Apply Now</button>
               </div>
+              <p id="my-form-status"></p>
             </form>
             <!-- Job Form Validation-->
-            <script type="text/javascript">
-              $("#job_apply_form").validate({
-                submitHandler: function(form) {
-                  var form_btn = $(form).find('button[type="submit"]');
-                  var form_result_div = '#form-result';
-                  $(form_result_div).remove();
-                  form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
-                  var form_btn_old_msg = form_btn.html();
-                  form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
-                  $(form).ajaxSubmit({
-                    dataType:  'json',
-                    success: function(data) {
-                      if( data.status == 'true' ) {
-                        $(form).find('.form-control').val('');
+            <script>
+                 /* function recaptchaCallback() {
+                      var btnSubmit = document.getElementById("my-form-button");
+                      if ( btnSubmit.classList.contains("hidden") ) {
+                          btnSubmit.classList.remove("hidden");
+                          btnSubmitclassList.add("show");
                       }
-                      form_btn.prop('disabled', false).html(form_btn_old_msg);
-                      $(form_result_div).html(data.message).fadeIn('slow');
-                      setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
-                    }
+                  }*/
+
+                   function recaptchaCallback(){
+                       document.getElementById("my-form-button").disabled = false;
+                     }
+              </script>
+              <!-- Contact Form Validation-->
+              <script>
+                window.addEventListener("DOMContentLoaded", function() {
+
+                  // get the form elements defined in your form HTML above
+                  
+                  var form = document.getElementById("my-form");
+                  var button = document.getElementById("my-form-button");
+                  var status = document.getElementById("my-form-status");
+
+                  // Success and Error functions for after the form is submitted
+                  
+                  function success() {
+                    form.reset();
+                    button.style = "display: none ";
+                    status.innerHTML = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + 'Thank you for contacting us' + '</div>';
+                  }
+
+                  function error() {
+                    status.innerHTML = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + 'Sorry. There was an issue. Please try again' + '</div>';
+                  }
+
+                  // handle the form submission event
+
+                  form.addEventListener("submit", function(ev) {
+                    ev.preventDefault();
+                    var data = new FormData(form);
+                    ajax(form.method, form.action, data, success, error);
                   });
+                });
+                
+                // helper function for sending an AJAX request
+
+                function ajax(method, url, data, success, error) {
+                  var xhr = new XMLHttpRequest();
+                  xhr.open(method, url);
+                  xhr.setRequestHeader("Accept", "application/json");
+                  xhr.onreadystatechange = function() {
+                    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+                    if (xhr.status === 200) {
+                      success(xhr.response, xhr.responseType);
+                    } else {
+                      error(xhr.status, xhr.response, xhr.responseType);
+                    }
+                  };
+                  xhr.send(data);
                 }
-              });
-            </script>
+              </script>
           </div>
         </div>
       </div>
