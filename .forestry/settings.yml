@@ -6,7 +6,7 @@ webhook_url:
 sections:
 - type: document
   path: _config.yml
-  label: config
+  label: Footer
 - type: heading
   label: MODIFY THE MAIN PAGES
 - type: jekyll-pages
