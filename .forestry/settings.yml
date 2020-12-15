@@ -7,7 +7,6 @@ sections:
 - type: document
   path: _config.yml
   label: config
-  match: "**/*"
 - type: heading
   label: MODIFY THE MAIN PAGES
 - type: jekyll-pages
