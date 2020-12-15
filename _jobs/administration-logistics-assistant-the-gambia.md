@@ -22,8 +22,9 @@ In close consultation with the ADM/HR officer and Logistic officer, the ADM/LOG 
 
 ## Administration
 
-* Make travel reservations and arrangements for visitors; manage the payment of rent and utilities or repairs for the office; Track calls or emails by email, if necessary
-* Improve office management systems and processes • Prepare logistics for newcomers and visitors; manage logistics for meetings and training
+1. Make travel reservations and arrangements for visitors; manage the payment of rent and utilities or repairs for the office; Track calls or emails by email, if necessary
+2. Improve office management systems and processes 
+3. Prepare logistics for newcomers and visitors; manage logistics for meetings and training
 
 ## HR
 
