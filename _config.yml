@@ -67,6 +67,10 @@ logo_blanc: "/assets/img/lifft_logo_white.png"
 description: >- # this means to ignore newlines until "baseurl:"
   Our program develops value chain linkages necessary to support an integrated regional trade network for the cashew value chain, 
   and enhancing the production and trade of cashews in local and international markets.
+copyright_text: Copyright &copy;2020 Shelter For Life International. All Rights Reserved
+facebook: "https://web.facebook.com/LIFFTCashewSFL/"
+twitter: "https://twitter.com/LIFFTCashew"
+linkedin: "https://www.linkedin.com/company/lifft-cashew-project/"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
