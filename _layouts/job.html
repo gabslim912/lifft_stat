@@ -78,7 +78,7 @@ layout: default
               </a>
               <h3 class="icon-box-title pt-15 mt-0 mb-40" style="font-weight: bold; font-size: 25px;">{{ page.title }}</h3>
               <hr>
-              <p class="text-gray" style="text-align: justify;">{{ page.content }}</p>
+              {{ page.content }}
           </div>
         </div>
       </div>
@@ -89,25 +89,26 @@ layout: default
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 bg-lightest-transparent p-30 pt-10">
-            <h1 class="text-center text-theme-colored mb-20">Apply Now</h1>
+            <h1 class="text-center text-uppercase text-theme-colored mb-20">Apply Now</h1>
+            <hr>
             <form action="https://formspree.io/f/mvovqnoy" method="POST" id="my-form" target="_blank" enctype="multipart/form-data">
               <div class="row">
                 <div class="col-sm-6 col-xs-12">
                   <div class="form-group">
                     <label class="text-white">First Name <small>*</small></label>
-                    <input name="first_name" type="text" placeholder="Enter First Name" required="" class="form-control">
+                    <input name="first_name" type="text" placeholder="FIRST NAME" required="" class="form-control">
                   </div>
                 </div>
                 <div class="col-sm-6 col-xs-12">
                   <div class="form-group">
                     <label class="text-white">Last Name <small>*</small></label>
-                    <input name="last_name" type="text" placeholder="Enter Last Name" required="" class="form-control">
+                    <input name="last_name" type="text" placeholder="LAST NAME" required="" class="form-control">
                   </div>
                 </div>             
                 <div class="col-sm-12 col-xs-12">
                   <div class="form-group">
                     <label class="text-white">Email <small>*</small></label>
-                    <input name="email" class="form-control required email" type="email" placeholder="Enter Email">
+                    <input name="email" class="form-control required email" type="email" placeholder="EMAIL">
                   </div>
                 </div>
                
@@ -124,7 +125,7 @@ layout: default
                   </div>
                 </div>
                 <div class="col-sm-6 col-xs-12">
-                  <div class="form-group ml-0 pl-0">
+                  <div class="form-group ml-0 pl-0 pull-right">
                     <label class="text-white">Upload your resume here</label>
                     <input class="btn btn-default btn-theme-colored btn-flat btn-sm" name="upload" type="file" >
                     <!--<small>Maximum upload file size: 12 MB</small>-->
