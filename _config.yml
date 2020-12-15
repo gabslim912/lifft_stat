@@ -1,23 +1,4 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
+---
 title: LIFFT Cashew Project
 collections:
   posts:
@@ -51,10 +32,10 @@ collections:
     title: indicators
     output: true
 email: lifftcashewinfo@shelter.org
-tel1: (+221) 33 991 94 55
-tel2: + 221 33 823 44 45
-telgb: (+245) 95 663 74 13
-telgm: (+220) 353 53 86
+tel1: "(+221) 33 991 94 55"
+tel2: "+ 221 33 823 44 45"
+telgb: "(+245) 95 663 74 13"
+telgm: "(+220) 353 53 86"
 sn_address: 178 Nema Complementaire, Ziguinchor
 gb_address: Rua Lamine Indjai na Cidade de Bissau
 gm_address: Kotu East, KMC, The Gambia
@@ -64,39 +45,17 @@ logo_dark: "/assets/images/logo_dark.png"
 logo_new: "/assets/img/logo_new.png"
 logo_colored: "/assets/img/lifft_logo_color.png"
 logo_blanc: "/assets/img/lifft_logo_white.png"
-description: >- # this means to ignore newlines until "baseurl:"
-  Our program develops value chain linkages necessary to support an integrated regional trade network for the cashew value chain, 
-  and enhancing the production and trade of cashews in local and international markets.
+description: Our program develops value chain linkages necessary to support an integrated
+  regional trade network for the cashew value chain,  and enhancing the production
+  and trade of cashews in local and international markets.
 copyright_text: Copyright &copy;2020 Shelter For Life International. All Rights Reserved
-facebook: "https://web.facebook.com/LIFFTCashewSFL/"
-twitter: "https://twitter.com/LIFFTCashew"
-linkedin: "https://www.linkedin.com/company/lifft-cashew-project/"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-
-# Build settings
+facebook: https://web.facebook.com/LIFFTCashewSFL/
+twitter: https://twitter.com/LIFFTCashew
+linkedin: https://www.linkedin.com/company/lifft-cashew-project/
+baseurl: ''
+url: ''
+twitter_username: LIFFTCashew
+github_username: jekyll
 plugins:
-  - jekyll-feed
-  - jekyll-menus
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+- jekyll-feed
+- jekyll-menus
