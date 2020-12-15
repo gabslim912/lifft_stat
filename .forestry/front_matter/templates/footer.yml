@@ -5,125 +5,6 @@ fields:
 - type: text
   name: title
   label: title
-- type: field_group
-  name: collections
-  label: collections
-  fields:
-  - type: field_group
-    name: posts
-    label: posts
-    fields:
-    - type: text
-      name: title
-      label: title
-    - type: boolean
-      name: output
-      label: output
-  - type: field_group
-    name: preleases
-    label: preleases
-    fields:
-    - type: text
-      name: title
-      label: title
-    - type: boolean
-      name: output
-      label: output
-  - type: field_group
-    name: publications
-    label: publications
-    fields:
-    - type: text
-      name: title
-      label: title
-    - type: boolean
-      name: output
-      label: output
-  - type: field_group
-    name: events
-    label: events
-    fields:
-    - type: text
-      name: title
-      label: title
-    - type: boolean
-      name: output
-      label: output
-  - type: field_group
-    name: stories
-    label: stories
-    fields:
-    - type: text
-      name: title
-      label: title
-    - type: boolean
-      name: output
-      label: output
-  - type: field_group
-    name: teams
-    label: teams
-    fields:
-    - type: text
-      name: title
-      label: title
-    - type: boolean
-      name: output
-      label: output
-  - type: field_group
-    name: faqs
-    label: faqs
-    fields:
-    - type: text
-      name: title
-      label: title
-    - type: boolean
-      name: output
-      label: output
-  - type: field_group
-    name: jobs
-    label: jobs
-    fields:
-    - type: text
-      name: title
-      label: title
-    - type: boolean
-      name: output
-      label: output
-  - type: field_group
-    name: donors
-    label: donors
-    fields:
-    - type: text
-      name: title
-      label: title
-    - type: boolean
-      name: output
-      label: output
-  - type: field_group
-    name: indicators
-    label: indicators
-    fields:
-    - type: text
-      name: title
-      label: title
-    - type: boolean
-      name: output
-      label: output
-- type: text
-  name: email
-  label: email
-- type: text
-  name: tel1
-  label: tel1
-- type: text
-  name: tel2
-  label: tel2
-- type: text
-  name: telgb
-  label: telgb
-- type: text
-  name: telgm
-  label: telgm
 - type: text
   name: sn_address
   label: sn_address
@@ -134,23 +15,8 @@ fields:
   name: gm_address
   label: gm_address
 - type: file
-  name: logo_white
-  label: logo_white
-- type: file
-  name: logo_white2
-  label: logo_white2
-- type: file
-  name: logo_dark
-  label: logo_dark
-- type: file
-  name: logo_new
-  label: logo_new
-- type: file
   name: logo_colored
   label: logo_colored
-- type: file
-  name: logo_blanc
-  label: logo_blanc
 - type: textarea
   name: description
   label: description
@@ -167,17 +33,5 @@ fields:
   name: linkedin
   label: linkedin
 - type: text
-  name: baseurl
-  label: baseurl
-- type: text
-  name: url
-  label: url
-- type: text
   name: twitter_username
   label: twitter_username
-- type: text
-  name: github_username
-  label: github_username
-- type: list
-  name: plugins
-  label: plugins
