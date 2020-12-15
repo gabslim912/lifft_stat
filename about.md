@@ -19,7 +19,7 @@ first_section:
   - "/uploads/cashew_27.jpg"
   - "/uploads/cashew_111-1.jpg"
 second_section:
-  title: Our Goal
+  title: Our Approach
   test_content: |-
     <p>We take an integrated approach along the cashew value chain, with activities in the following areas:</p>
                 <ul class="list theme-colored check pt-0">
