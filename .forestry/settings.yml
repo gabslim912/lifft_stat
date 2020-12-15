@@ -4,6 +4,11 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
+- type: directory
+  path: _data
+  label: Logo, Footer and Map
+  create: all
+  match: "**/*.{json,yaml,yml}"
 - type: document
   path: _config.yml
   label: Footer
