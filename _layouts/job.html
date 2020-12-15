@@ -116,23 +116,25 @@ layout: default
                 <label>Message <small>*</small></label>
                 <textarea name="message" class="form-control required" rows="5" placeholder="Your cover letter/message sent to the employer"></textarea>
               </div>-->
-              <div class="col-sm-6 col-xs-12 mt-15 mb-15 pl-0">
-                <div class="form-group ">
-                  <div class="g-recaptcha" data-sitekey="6LcZz-8ZAAAAAC1sGgo2nGBBllScwtlIbu61VsUN" data-callback="recaptchaCallback"></div>
-                  <!--<small>Maximum upload file size: 12 MB</small>-->
+              <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                  <div class="form-group mt-15">
+                    <div class="g-recaptcha" data-sitekey="6LcZz-8ZAAAAAC1sGgo2nGBBllScwtlIbu61VsUN" data-callback="recaptchaCallback"></div>
+                    <!--<small>Maximum upload file size: 12 MB</small>-->
+                  </div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-xs-12">
-                <div class="form-group ml-0 pl-0">
-                  <label class="text-white">Upload your resume here</label>
-                  <input class="btn btn-default btn-theme-colored btn-flat btn-sm" name="upload" type="file" >
-                  <!--<small>Maximum upload file size: 12 MB</small>-->
+                <div class="col-sm-6 col-xs-12">
+                  <div class="form-group ml-0 pl-0">
+                    <label class="text-white">Upload your resume here</label>
+                    <input class="btn btn-default btn-theme-colored btn-flat btn-sm" name="upload" type="file" >
+                    <!--<small>Maximum upload file size: 12 MB</small>-->
+                  </div>
                 </div>
-              </div>
-              
-              <div class="form-group">
-               
-                <button id="my-form-button" type="submit" class="btn btn-block btn-dark btn-theme-colored btn-sm mt-20 pt-10 pb-10" disabled="true">Apply Now</button>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="form-group">
+                    <button id="my-form-button" type="submit" class="btn btn-block btn-dark btn-theme-colored btn-sm mt-20 pt-10 pb-10" disabled="true">Apply Now</button>
+                  </div>
+                </div>
               </div>
               <p id="my-form-status"></p>
             </form>
