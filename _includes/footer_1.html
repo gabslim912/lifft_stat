@@ -11,7 +11,7 @@
         data-marker="/assets/images/map-marker4.png">
       </div>
       <!-- Google Map Javascript Codes -->
-      <script src="http://maps.google.com/maps/api/js?key=AIzaSyDqF7BlCvlPXR7hwllgjCoXBu0Pgew8Ktk"></script>
+      <script src="https://maps.google.com/maps/api/js?key=AIzaSyDqF7BlCvlPXR7hwllgjCoXBu0Pgew8Ktk"></script>
       <script src="/assets/js/google-map-init-multilocation.js"></script>
 
     </div>
@@ -99,12 +99,12 @@
           <div class="widget dark">
             <h5 class="widget-title line-bottom">Useful Links</h5>
             <ul class="list-border">
-              <li><a class="text-white" href="/">Home</a></li>
-            <!--<li><a href="/sitemap.html">Sitemap</a></li>-->
-            <li><a class="text-white" href="/faq.html">FAQ</a></li>
-            <li><a class="text-white" href="/stories.html">Success Stories</a></li>
-            <li><a class="text-white" href="/join_us.html">Join our team</a></li>
-            <li><a class="text-white" href="/contact.html">Contact</a></li>
+            <!--<li><a class="text-white" href="/">Home</a></li>
+            <li><a href="/sitemap.html">Sitemap</a></li>-->
+            {% for link in site.data.useful_links %}
+            <li><a class="text-white" href="{{ link.url }}">{{ link.name }}</a></li>
+            
+            {% endfor %}
             </ul>
           </div>
         </div>
