@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
+- type: document
+  path: config.yml
+  label: config
+  match: "**/*"
 - type: heading
   label: MODIFY THE MAIN PAGES
 - type: jekyll-pages
