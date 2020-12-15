@@ -30,3 +30,8 @@ fields:
 - type: text
   name: country
   label: Country
+- name: salary
+  type: text
+  config:
+    required: false
+  label: Salary
