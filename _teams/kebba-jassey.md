@@ -1,6 +1,6 @@
 ---
 layout: team_member
-image: "/uploads/kebba_jassey.png"
+image: "/uploads/kebba.png"
 linked_in: "#"
 facebook: "#"
 google_plus: "#"
@@ -18,4 +18,4 @@ My main responsibilities include liaising with the relevant government ministrie
 * A seasoned rural development practitioner with more than 20 years’ work experience
 * Have an advanced Diploma in Development Studies with Stratford College
 * Have more than 15 years’ value chain project management experience on sesame and cashews with leading international Non-Governmental Organizations
-* My other sector competencies include organizational development and strengthening; disaster emergency assessment, planning and response; and monitoring and evaluation. 
+* My other sector competencies include organizational development and strengthening; disaster emergency assessment, planning and response; and monitoring and evaluation.
