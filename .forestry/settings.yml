@@ -10,8 +10,8 @@ sections:
   path: _data
   label: Global Variables
   create: all
-    match: "*.yaml"
-  new_doc_ext: ".yaml"
+  match: "*.yml"
+  new_doc_ext: ".yml"
 - type: heading
   label: MODIFY THE MAIN PAGES
 - type: jekyll-pages
