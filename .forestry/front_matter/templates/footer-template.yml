@@ -1,4 +1,117 @@
 ---
 label: footer template
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  default: Footer Component
+- name: background_image
+  type: file
+  config:
+    maxSize: 64
+  label: Background Image
+  default: "/uploads/cashew_141-4.jpg"
+- name: subscribe_section
+  type: field_group
+  config: {}
+  fields:
+  - name: placeholder
+    type: text
+    config:
+      required: false
+    label: Placeholder
+    description: Text inside the subscribe form input
+    default: Subscribe To Our Newsletter
+  - name: button_title
+    type: text
+    config:
+      required: false
+    label: Button Title
+    default: Subscribe
+  - name: sfl_mailchimp_api
+    type: text
+    config:
+      required: false
+    label: SFL Mailchimp API
+    default: https://shelter.us17.list-manage.com/subscribe/post?u=a5f598711c0966bf9f2ede2c2&amp;id=55a4cfd2f2
+  label: Subscribe Section
+- name: logo
+  type: file
+  config:
+    maxSize: 64
+  label: Logo
+  default: "/uploads/lifft_logo_color.png"
+- name: description
+  type: textarea
+  default: Our program develops value chain linkages necessary to support an integrated
+    regional trade network for the cashew value chain, and enhancing the production
+    and trade of cashews in local and international markets.
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Text below the logo
+- name: latest_news_title
+  type: text
+  config:
+    required: false
+  label: Latest News Title
+- name: useful_links
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: links
+    type: field_group_list
+    fields:
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Title
+    - name: url
+      type: text
+      config:
+        required: false
+      label: URL
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Links
+  label: Useful Links
+- name: sub_footer
+  type: field_group
+  config: {}
+  fields:
+  - name: copyright_text
+    type: text
+    config:
+      required: false
+    label: Copyright Text
+    default: Copyright &copy;2020 Shelter For Life International. All Rights Reserved
+  - name: facebook_page_url
+    type: text
+    config:
+      required: false
+    label: Facebook Page Url
+  - name: twitter_page_url
+    type: text
+    config:
+      required: false
+    label: Twitter Page Url
+  - name: linked_in_url
+    type: text
+    config:
+      required: false
+    label: Linked-in Url
+  label: Sub Footer
