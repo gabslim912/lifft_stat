@@ -1,0 +1,11 @@
+---
+- name: Home
+  url: "/"
+- name: FAQ
+  url: "/faq.html"
+- name: Success Stories
+  url: "/stories.html"
+- name: Join our team
+  url: "/join_us.html"
+- name: Contact us
+  url: "/contact.html"
