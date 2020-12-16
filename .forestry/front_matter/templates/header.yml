@@ -8,6 +8,7 @@ fields:
     required: false
   label: Title
   default: Header Section
+  hidden: true
 - name: logo
   type: file
   config:
