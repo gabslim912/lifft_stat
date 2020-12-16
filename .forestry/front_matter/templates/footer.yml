@@ -35,5 +35,3 @@ fields:
 - type: text
   name: twitter_username
   label: twitter_username
-pages:
-- _config.yml

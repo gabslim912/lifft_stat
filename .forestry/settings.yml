@@ -4,14 +4,13 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
+- type: heading
+  label: LOGO, FOOTER, MAP ...
 - type: directory
   path: _data
-  label: Logo, Footer and Map
+  label: Global Variables
   create: all
   match: "**/*.{json,yaml,yml}"
-- type: document
-  path: _config.yml
-  label: Footer
 - type: heading
   label: MODIFY THE MAIN PAGES
 - type: jekyll-pages
