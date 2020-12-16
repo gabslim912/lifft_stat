@@ -48,3 +48,5 @@ fields:
     maxSize: 64
   label: Map Marker Icon
   default: "/uploads/map-marker4.png"
+pages:
+- _data/map.yml
