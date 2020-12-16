@@ -5,30 +5,31 @@
       <!-- Google Map HTML Codes -->
       <div 
         id="map-canvas-multipointer"
-        data-mapstyle="style4"
-        data-height="500"
+        data-mapstyle="{{ site.data.map.map_style }}"
+        data-height="{{ site.data.map.map_height }}"
         data-zoom="7"
-        data-marker="/assets/images/map-marker4.png">
+        data-marker="{{ site.data.map.map_marker_icon }}">
       </div>
       <!-- Google Map Javascript Codes -->
-      <script src="https://maps.google.com/maps/api/js?key=AIzaSyDqF7BlCvlPXR7hwllgjCoXBu0Pgew8Ktk"></script>
+      <script src="{{ site.data.map.google_map_api }}"></script>
       <script src="/assets/js/google-map-init-multilocation.js"></script>
 
     </div>
   </div>
 </section>
-<footer id="footer" class=" divider parallax layer-overlay overlay-dark-9" data-bg-img="/assets/img/cashew_141.jpg" data-parallax-ratio="0.1">
+<footer id="footer" class=" divider parallax layer-overlay overlay-dark-9" data-bg-img="{{ site.data.footer.background_image }}" data-parallax-ratio="0.1">
     <div class="container pt-40 pb-40">
       <div class="row mt-10 mb-20">
         <div class="col-md-12">
           <div class="widget dark">
             <!--<h5 class="widget-title mb-10">Subscribe To Our Newsletter</h5>-->
             <!-- Mailchimp Subscription Form Starts Here -->
+            {% assign subscribe = site.data.footer.subscribe_section %}
             <form id="mailchimp-subscription-form-footer" class="newsletter-form">
               <div class="input-group">
-                <input type="email" value="" name="EMAIL" placeholder="Subscribe To Our Newsletter" class="form-control input-lg font-16" data-height="45px" id="mce-EMAIL" style="height: 45px;">
+                <input type="email" value="" name="EMAIL" placeholder="{{ subscribe.placeholder }}" class="form-control input-lg font-16" data-height="45px" id="mce-EMAIL" style="height: 45px;">
                 <span class="input-group-btn">
-                  <button data-height="45px" class="btn btn-colored btn-theme-colored btn-xs m-0 font-14" type="submit">Subscribe</button>
+                  <button data-height="45px" class="btn btn-colored btn-theme-colored btn-xs m-0 font-14" type="submit">{{ subscribe.button_title }}</button>
                 </span>
               </div>
             </form>
@@ -36,7 +37,7 @@
             <script type="text/javascript">
               $('#mailchimp-subscription-form-footer').ajaxChimp({
                   callback: mailChimpCallBack,
-                  url: 'https://shelter.us17.list-manage.com/subscribe/post?u=a5f598711c0966bf9f2ede2c2&amp;id=55a4cfd2f2'
+                  url: '{{ subscribe.sfl_mailchimp_api }}'
               });
 
               function mailChimpCallBack(resp) {
@@ -70,8 +71,8 @@
       <div class="row border-bottom-black">
         <div class="col-sm-6 col-md-3">
           <div class="widget dark">
-            <img class="mt-10 mb-20" src="{{ site.logo_colored }}" alt="Lifft Cashew Project"  style="width: 200px;">
-            <p class="text-white text-justify" style="line-height: 1.7; font-size: 14px;font-family: 'Open Sans', sans-serif;">{{ site.description }}</p>
+            <img class="mt-10 mb-20" src="{{ site.data.footer.logo }}" alt="Lifft Cashew Project"  style="width: 200px;">
+            <p class="text-white text-justify" style="line-height: 1.7; font-size: 14px;font-family: 'Open Sans', sans-serif;">{{ site.data.footer.description }}</p>
             <!--<ul class="list-inline mt-5">
               <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a class="text-gray" href="#">123-456-789</a> </li>
               <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-colored mr-5"></i> <a class="text-gray" href="#">contact@yourdomain.com</a> </li>
@@ -81,7 +82,7 @@
         </div>
         <div class="col-sm-6 col-md-6">
           <div class="widget dark">
-            <h5 class="widget-title line-bottom">Latest News</h5>
+            <h5 class="widget-title line-bottom">{{ site.data.footer.latest_news_title }}</h5>
             <div class="latest-posts">
               {% for post in site.posts limit:3 %}
               <article class="post media-post clearfix pb-0 mb-10">
@@ -97,12 +98,12 @@
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="widget dark">
-            <h5 class="widget-title line-bottom">Useful Links</h5>
+            <h5 class="widget-title line-bottom">{{ site.data.footer.useful_links.title }}</h5>
             <ul class="list-border">
             <!--<li><a class="text-white" href="/">Home</a></li>
             <li><a href="/sitemap.html">Sitemap</a></li>-->
-            {% for link in site.data.useful_links %}
-            <li><a class="text-white" href="{{ link.url }}">{{ link.name }}</a></li>
+            {% for link in site.data.footer.useful_links.links %}
+            <li><a class="text-white" href="{{ link.url }}">{{ link.title }}</a></li>
             
             {% endfor %}
             </ul>
@@ -157,14 +158,14 @@
       <div class="container pt-10 pb-0">
         <div class="row">
           <div class="col-md-6 sm-text-center">
-            <p class="font-13 text-white m-0">{{ site.copyright_text }}</p>
+            <p class="font-13 text-white m-0">{{ site.data.footer.sub_footer.copyright_text }}</p>
           </div>
           <div class="col-md-6 text-right flip sm-text-center">
             <div class="widget no-border m-0">
               <ul class="styled-icons icon-dark icon-circled icon-sm">
-                <li><a href="{{ site.facebook }}" target="blank"><i class="fa fa-facebook"></i></a> </li>
-                <li><a href="{{ site.twitter }}" target="blank"><i class="fa fa-twitter"></i></a> </li>
-                <li><a href="{{ site.linkedin }}" target="blank"><i class="fa fa-linkedin"></i></a> </li>
+                <li><a href="{{ site.data.footer.sub_footer.facebook_page_url }}" target="blank"><i class="fa fa-facebook"></i></a> </li>
+                <li><a href="{{ site.data.footer.sub_footer.twitter_page_url }}" target="blank"><i class="fa fa-twitter"></i></a> </li>
+                <li><a href="{{ site.data.footer.sub_footer.linked_in_url }}" target="blank"><i class="fa fa-linkedin"></i></a> </li>
               </ul>
             </div>
           </div>
