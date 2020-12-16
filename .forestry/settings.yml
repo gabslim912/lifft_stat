@@ -11,7 +11,7 @@ sections:
   label: Global Variables
   create: all
   match: "*.yml"
-  new_doc_ext: ".yml"
+  new_doc_ext: yml
 - type: heading
   label: MODIFY THE MAIN PAGES
 - type: jekyll-pages
