@@ -7,7 +7,7 @@ fields:
   config:
     required: false
   label: Title
-  default: Footer Component
+  default: Footer Section
 - name: background_image
   type: file
   config:
@@ -115,5 +115,3 @@ fields:
       required: false
     label: Linked-in Url
   label: Sub Footer
-pages:
-- _data/footer-component.yml
