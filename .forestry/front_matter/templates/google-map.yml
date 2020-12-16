@@ -8,6 +8,7 @@ fields:
     required: false
   label: Title
   default: Google Map Section
+  hidden: true
 - name: google_map_api
   type: text
   config:
