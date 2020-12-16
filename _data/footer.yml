@@ -19,6 +19,8 @@ latest_news_title: Latest News
 useful_links:
   title: Useful Links
   links:
+  - title: Events
+    url: "/events.html"
   - title: Homepage
     url: "/"
   - title: About Us
