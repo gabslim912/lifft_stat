@@ -115,3 +115,5 @@ fields:
       required: false
     label: Linked-in Url
   label: Sub Footer
+pages:
+- _data/footer-component.yml

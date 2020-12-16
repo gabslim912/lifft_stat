@@ -1,0 +1,31 @@
+---
+title: Footer Component
+background_image: "/uploads/cashew_141-4.jpg"
+subscribe_section:
+  placeholder: Subscribe To Our Newsletter
+  button_title: Subscribe
+  sfl_mailchimp_api: https://shelter.us17.list-manage.com/subscribe/post?u=a5f598711c0966bf9f2ede2c2&amp;id=55a4cfd2f2
+logo: "/uploads/lifft_logo_color.png"
+description: Our program develops value chain linkages necessary to support an integrated
+  regional trade network for the cashew value chain, and enhancing the production
+  and trade of cashews in local and international markets.
+sub_footer:
+  copyright_text: Copyright &copy;2020 Shelter For Life International. All Rights
+    Reserved
+  facebook_page_url: https://web.facebook.com/LIFFTCashewSFL/
+  twitter_page_url: https://twitter.com/LIFFTCashew
+  linked_in_url: https://www.linkedin.com/company/lifft-cashew-project/
+latest_news_title: Latest News
+useful_links:
+  title: Useful Links
+  links:
+  - title: Homepage
+    url: "/"
+  - title: About Us
+    url: "/about.html"
+  - title: FAQ
+    url: faq.html
+  - title: News
+    url: blog.html
+  - title: Contact Us
+    url: "/contact.html"
