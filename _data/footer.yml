@@ -23,9 +23,9 @@ useful_links:
     url: "/"
   - title: About Us
     url: "/about.html"
-  - title: FAQ
-    url: faq.html
   - title: News
     url: blog.html
+  - title: FAQ
+    url: faq.html
   - title: Contact Us
     url: "/contact.html"
