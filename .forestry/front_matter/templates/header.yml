@@ -1,4 +1,9 @@
 ---
 label: Header
 hide_body: true
-fields: []
+fields:
+- name: logo
+  type: file
+  config:
+    maxSize: 64
+  label: Logo
