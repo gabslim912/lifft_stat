@@ -86,3 +86,5 @@ fields:
     label: Image
     default: "/uploads/blog-post-1.jpg"
   label: Sliders
+pages:
+- _components/infrastructure.md
