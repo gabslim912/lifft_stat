@@ -85,3 +85,4 @@ fields:
   label: Sliders
 pages:
 - _components/infrastructure.md
+- _components/on-farm-practices.md
