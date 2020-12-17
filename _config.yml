@@ -32,6 +32,9 @@ collections:
   events:
     title: Events
     output: true
+  components:
+    title: Components
+    output: true
   stories:
     title: Stories
     output: true
