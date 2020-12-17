@@ -1,4 +1,88 @@
 ---
 label: Component
 hide_body: false
-fields: []
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  hidden: true
+  default: component
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  default: Component Title
+- name: permalink
+  type: text
+  config:
+    required: false
+  label: Permalink
+- name: parallax_image
+  type: file
+  config:
+    maxSize: 64
+  label: Parallax Image
+- name: progress_title
+  type: text
+  config:
+    required: false
+  label: Progress Title
+  default: Proress Title
+- name: progress_subtitle
+  type: text
+  config:
+    required: false
+  label: Progress subtitle
+  default: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem
+    temporibus quisquam voluptas natus, provident porro et odio perferendis ipsam,
+    amet sint
+- name: indicator
+  type: number
+  label: Indicator
+  description: ''
+  default: 600
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: indicator_unit
+  type: text
+  config:
+    required: false
+  label: Indicator Unit
+  default: Unit
+- name: goal
+  type: number
+  label: Goal
+  description: ''
+  default: 1000
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: percentage
+  type: number
+  label: Percentage
+  description: ''
+  default: 60
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: sliders
+  type: field_group
+  config: {}
+  fields:
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+    default: "/uploads/blog-post-1.jpg"
+  label: Sliders
