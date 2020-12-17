@@ -19,13 +19,13 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut unde, libero labor
 
 Specifically, mission support helps to:
 
-    <div class="">
-      <h5 class="mt-15">Specifically, mission support helps to</h5>
-      <ul class="list theme-colored check">
-        <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
-        <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
-        <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
-        <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
-        <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
-      </ul>
-    </div>
+<div class="">
+  <h5 class="mt-15">Specifically, mission support helps to</h5>
+  <ul class="list theme-colored check">
+    <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
+    <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
+    <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
+    <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
+    <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
+  </ul>
+</div>
