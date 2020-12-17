@@ -1,7 +1,7 @@
 ---
 layout: component
 title: Infrastructure
-progress_title: Progress Title
+progress_title: Indicator Title
 progress_subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
   quidem temporibus quisquam voluptas natus, provident porro et odio perferendis ipsam,
   amet sint
