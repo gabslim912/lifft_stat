@@ -16,14 +16,13 @@ sliders:
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut unde, libero laboriosam aspernatur ex pariatur sunt laborum molestiae quod voluptatum ipsum perferendis vero similique beatae neque quibusdam fuga optio provident, officia fugit magnam. Adipisci error dignissimos laboriosam perspiciatis, libero nobis.
 
-    <div class="">
-      <h5 class="mt-15">Specifically, mission support helps to</h5>
-      <ul class="list theme-colored check">
-        <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
-        <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
-        <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
-        <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
-        <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
-      </ul>
-    </div>
-    
+<div class="">
+  <h5 class="mt-15">Specifically, mission support helps to</h5>
+  <ul class="list theme-colored check">
+    <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
+    <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
+    <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
+    <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
+    <li>Adipisci error dignissimos laboriosam perspiciatis, libero nobis.</li>
+  </ul>
+</div>
