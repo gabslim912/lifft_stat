@@ -15,11 +15,6 @@ fields:
     required: false
   label: Title
   default: Component Title
-- name: permalink
-  type: text
-  config:
-    required: false
-  label: Permalink
 - name: parallax_image
   type: file
   config:
@@ -76,15 +71,17 @@ fields:
     max: 
     step: 
 - name: sliders
-  type: field_group
-  config: {}
+  type: field_group_list
   fields:
   - name: image
     type: file
     config:
       maxSize: 64
     label: Image
-    default: "/uploads/blog-post-1.jpg"
+  config:
+    min: 
+    max: 
+    labelField: 
   label: Sliders
 pages:
 - _components/infrastructure.md
