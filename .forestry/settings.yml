@@ -41,6 +41,15 @@ sections:
   templates:
   - faq
 - type: heading
+  label: OUR WORK
+- type: directory
+  path: _components
+  label: Components
+  create: all
+  match: "**/*"
+  templates:
+  - component
+- type: heading
   label: IMPACT
 - type: directory
   path: _indicators
