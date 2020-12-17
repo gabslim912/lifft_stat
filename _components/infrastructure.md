@@ -10,9 +10,9 @@ indicator_unit: Km
 goal: 1000
 percentage: 60
 sliders:
-  image: "/uploads/cashew_16.jpg"
+- image: "/uploads/event_12-1.jpg"
+- image: "/uploads/cashew_16.jpg"
 parallax_image: "/uploads/event_12-1.jpg"
-published: false
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut unde, libero laboriosam aspernatur ex pariatur sunt laborum molestiae quod voluptatum ipsum perferendis vero similique beatae neque quibusdam fuga optio provident, officia fugit magnam. Adipisci error dignissimos laboriosam perspiciatis, libero nobis.
